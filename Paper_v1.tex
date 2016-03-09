@@ -80,6 +80,9 @@ However, HCM FBA was still feasible for the network and performed well with resp
 Taken together, HCM FBA has comparable model performace to HCM EM and may be potentially applied to genome-scale networks which was a shortcoming of HCM EM.
 
 
+The advent of new and creative approaches to the mathematical modeling of cell metabolism allows for the accurate description and prediction of cell behavior for a wide variety of organism and culture conditions.  Monod kinetics have traditionally been used as unstructured models to describe cell growth, substrate consumption, and product formation [REF].  Structured models of metabolic pathways, such as Flux Balance Analysis (FBA), attempt to describe cellular behavior using the stoichiometry of biochemical networks, a pseudo-steady state assumption, an objective function, and system constraints [REF].  Cybernetic modeling approaches cell metabolism as a resource optimization problem; control variables are used to direct the allocation of resources through the cell in a manner most favorable to cell survival, growth, and product formation (Ramkrishna \& Song, 2012). Dynamic Flux Balance Analysis couples FBA with dynamic or static optimization methods to describe the change in metabolic fluxes over time (Mahadevan et al. 2002).
+
+
 \begin{figure}[!t]\centering
 \includegraphics[width=0.40\textwidth]{./figs/Fig-1-GeneralModel-Results.pdf}
 \caption{A: Proof of concept metabolic network with six metabolites and seven reactions.
@@ -88,6 +91,7 @@ Intracellular cellmass precursors $A,B$ and $C$ are balanced (no accumulation) w
 \end{figure}
 
 \section{Results}
+<<<<<<< HEAD
 In the general case model, we demonstrated that the performance of the HCM FBA was equivalent to that of HCM EM.
 In the proof of concept metabolic network consisting of 6 metabolites and 7 reactions (Fig. \ref{fig:model-fitting}A), we calculated 6 elementary modes and 3 FBA modes.  
 Using the HCM EM modeling framework, concentration profiles were generated for the extracellular metabolites and artifical biomass (Fig. \ref {fig:model-fitting}B). 
@@ -100,6 +104,9 @@ The simulated HCM EM concentration profiles of biomass, substrate and fermentati
 The kinetic parameters of HCM FBA were varied to fit the same experimental observations.
 HCM FBA has 17 kinetic parameters while HCM EM has 21 kinetic parameters and both models resulted in similar fits to the experimental data (Fig. \ref {fig:ecoli}A).
 HCM FBA had a slightly better fit on lactate than HCM EM. 
+=======
+In the general case model, we demonstrated that the performance of the hybrid cybernetic model with FBA modes was equivalent to that of the elementary modes. In the proof of concept metabolic network consisting of 6 metabolites and 7 reactions (Fig. \ref{fig:model-fitting} A), METATOOL generated 6 elementary modes. FBA generated 3 possible modes (pathways) for the same metabolic network. Temporal profiles of the extracellular metabolites and artificial biomass concentration are presented for both the HCM FBA and HCM EM models (Fig. \ref {fig:model-fitting} B).  HCM FBA has 9 kinetic parameters whereas HCM EM has 15 kinetic parameters. The kinetic parameters of HCM FBA were varied to fit the concentration profiles of the HCM EM model. 
+>>>>>>> c3d1f5cfafb16902310b765a19c054050f93d60f
 
 \begin{figure}[!t]\centering
 \includegraphics[width=0.48\textwidth]{./figs/Fig-2-Ecoli-SimulationResults.pdf}
