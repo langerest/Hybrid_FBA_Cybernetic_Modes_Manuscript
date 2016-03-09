@@ -1,11 +1,6 @@
-<<<<<<< HEAD
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2016.2.21)  8 MAR 2016 21:05
-=======
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  8 MAR 2016 17:59
->>>>>>> c3d1f5cfafb16902310b765a19c054050f93d60f
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2016.2.21)  8 MAR 2016 21:20
 entering extended mode
  restricted \write18 enabled.
- file:line:error style messages enabled.
  %&-line parsing enabled.
 **Paper_v1.tex
 (./Paper_v1.tex
@@ -409,11 +404,7 @@ File: ./figs/Fig-1-GeneralModel-Results.pdf Graphic file (type pdf)
 
 <use ./figs/Fig-1-GeneralModel-Results.pdf>
 Package pdftex.def Info: ./figs/Fig-1-GeneralModel-Results.pdf used on input li
-<<<<<<< HEAD
 ne 84.
-=======
-ne 62.
->>>>>>> c3d1f5cfafb16902310b765a19c054050f93d60f
 (pdftex.def)             Requested size: 206.39685pt x 272.40352pt.
  [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
@@ -467,7 +458,6 @@ d
 AED: lastpage setting LastPage
 [4] (./Paper_v1.aux) ) 
 Here is how much of TeX's memory you used:
-<<<<<<< HEAD
  4833 strings out of 493105
  75400 string characters out of 6137072
  150006 words of memory out of 5000000
@@ -494,33 +484,6 @@ exmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/font
 s/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/tim
 es/utmri8a.pfb>
 Output written on Paper_v1.pdf (4 pages, 783024 bytes).
-=======
- 4182 strings out of 493089
- 64581 string characters out of 6134842
- 134999 words of memory out of 5000000
- 7605 multiletter control sequences out of 15000+600000
- 44289 words of font info for 100 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 38i,9n,43p,1058b,276s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r
-.enc}</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.
-pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pf
-b></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
-></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb>
-</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></
-usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></us
-r/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/
-local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/lo
-cal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local
-/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/
-texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/te
-xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texl
-ive/2015/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2015/t
-exmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2015/texmf-dist
-/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/typ
-e1/urw/times/utmri8a.pfb>
-Output written on Paper_v1.pdf (2 pages, 260640 bytes).
->>>>>>> c3d1f5cfafb16902310b765a19c054050f93d60f
 PDF statistics:
  335 PDF objects out of 1000 (max. 8388607)
  252 compressed objects within 3 object streams
