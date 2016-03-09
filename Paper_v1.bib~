@@ -1,15 +1,8 @@
-%% This BibTeX bibliography file was created using BibDesk.
-%% http://bibdesk.sourceforge.net/
-
-%% Created for Jeffrey Varner at 2016-03-05 08:42:07 -0500 
-
-
-%% Saved with string encoding Unicode (UTF-8) 
 
 @article {2008_kim_varner_ramkrishna_BiotechProg,
-	author = {Kim, Jin Il and Varner, Jeffery D. and Ramkrishna, Doraiswami},
+	author = {Kim, JI and Varner, JD and Ramkrishna, D},
 	title = {A hybrid model of anaerobic E. coli GJT001: Combination of elementary flux modes and cybernetic variables},
-	journal = {Biotechnology Progress},
+	journal = {Biotechnol. Prog.},
 	volume = {24},
 	number = {5},
 	publisher = {Wiley Subscription Services, Inc., A Wiley Company},
@@ -21,7 +14,7 @@
 	}
 
 @article{1994_varma_palsson_ApplEnvMicro,
-	author = {Varma, Amit and Palsson, Bernhard O}, 
+	author = {Varma, A and Palsson, B{\O}}, 
 	title = {Stoichiometric flux balance models quantitatively predict growth and metabolic by-product secretion in wild-type Escherichia coli W3110.},
 	volume = {60}, 
 	number = {10}, 
@@ -29,12 +22,11 @@
 	year = {1994}, 
 	abstract ={Flux balance models of metabolism use stoichiometry of metabolic pathways, metabolic demands of growth, and optimality principles to predict metabolic flux distribution and cellular growth under specified environmental conditions. These models have provided a mechanistic interpretation of systemic metabolic physiology, and they are also useful as a quantitative tool for metabolic pathway design. Quantitative predictions of cell growth and metabolic by-product secretion that are experimentally testable can be obtained from these models. In the present report, we used independent measurements to determine the model parameters for the wild-type Escherichia coli strain W3110. We experimentally determined the maximum oxygen utilization rate (15 mmol of O2 per g [dry weight] per h), the maximum aerobic glucose utilization rate (10.5 mmol of Glc per g [dry weight] per h), the maximum anaerobic glucose utilization rate (18.5 mmol of Glc per g [dry weight] per h), the non-growth-associated maintenance requirements (7.6 mmol of ATP per g [dry weight] per h), and the growth-associated maintenance requirements (13 mmol of ATP per g of biomass). The flux balance model specified by these parameters was found to quantitatively predict glucose and oxygen uptake rates as well as acetate secretion rates observed in chemostat experiments. We have formulated a predictive algorithm in order to apply the flux balance model to describe unsteady-state growth and by-product secretion in aerobic batch, fed-batch, and anaerobic batch cultures. In aerobic experiments we observed acetate secretion, accumulation in the culture medium, and reutilization from the culture medium. In fed-batch cultures acetate is cometabolized with glucose during the later part of the culture period.(ABSTRACT TRUNCATED AT 250 WORDS)}, 
 	URL = {http://aem.asm.org/content/60/10/3724.abstract}, 
-	eprint = {http://aem.asm.org/content/60/10/3724.full.pdf+html}, 
-	journal = {Applied and Environmental Microbiology} 
+	journal = {Appl. Environ. Microbiol.} 
 	}
 
 @article{2007_schuetz_etal_MolSysBio,
-	author = {Schuetz, Robert and Kuepfer, Lars and Sauer, Uwe},
+	author = {Schuetz, R and Kuepfer, L and Sauer, U},
 	title = {Systematic evaluation of objective functions for predicting intracellular fluxes in Escherichia coli},
 	volume = {3},
 	number = {1},
@@ -44,12 +36,11 @@
 	abstract = {To which extent can optimality principles describe the operation of metabolic networks? By explicitly considering experimental errors and in silico alternate optima in flux balance analysis, we systematically evaluate the capacity of 11 objective functions combined with eight adjustable constraints to predict 13C-determined in vivo fluxes in Escherichia coli under six environmental conditions. While no single objective describes the flux states under all conditions, we identified two sets of objectives for biologically meaningful predictions without the need for further, potentially artificial constraints. Unlimited growth on glucose in oxygen or nitrate respiring batch cultures is best described by nonlinear maximization of the ATP yield per flux unit. Under nutrient scarcity in continuous cultures, in contrast, linear maximization of the overall ATP or biomass yields achieved the highest predictive accuracy. Since these particular objectives predict the system behavior without preconditioning of the network structure, the identified optimality principles reflect, to some extent, the evolutionary selection of metabolic network regulation that realizes the various flux states.Mol Syst Biol. 3: 119},
 	issn = {1744-4292},
 	URL = {http://msb.embopress.org/content/3/1/119},
-	eprint = {http://msb.embopress.org/content/3/1/119.full.pdf},
-	journal = {Molecular Systems Biology}
+	journal = {Mol. Syst. Biol.}
 }
 
 @book{2006_Palsson_model,
- author = {Palsson, Bernhard O.},
+ author = {Palsson, B{\O}},
  title = {Systems Biology: Properties of Reconstructed Networks},
  year = {2006},
  isbn = {0521859034},
@@ -58,9 +49,9 @@
 }
 
 @article{2004_lee_varner_ko_ieee,
-	author = {Lie-Quan Lee and Jeff Varner and Kwok Ko},
+	author = {Lee L and Varner JD and Ko K},
 	title = {Parallel Extreme Pathway Computation for Metabolic Networks},
-	journal ={Computational Systems Bioinformatics Conference, International IEEE Computer Society},
+	journal ={Comput Syst Bioinformatics Conf, Int IEEE CS},
 	volume = {0},
 	isbn = {0-7695-2194-0},
 	year = {2004},
@@ -72,8 +63,8 @@
 
 @article{2010_orth_NatBiotech,
   title={What is flux balance analysis?},
-  author={Orth, Jeffrey D and Thiele, Ines and Palsson, Bernhard {\O}},
-  journal={Nature biotechnology},
+  author={Orth, JD and Thiele, I and Palsson, B{\O}},
+  journal={Nat. Biotechnol.},
   volume={28},
   number={3},
   pages={245--248},
@@ -83,7 +74,7 @@
 
 @article{2002_Mahadevan_BiophysJ,
 	title = {Dynamic Flux Balance Analysis of Diauxic Growth in Escherichia coli},
-	journal = {Biophysical Journal},
+	journal = {Biophys. J.},
 	volume = {83},
 	number = {3},
 	pages = {1331 - 1340},
@@ -92,14 +83,14 @@
 	issn = {0006-3495},
 	doi = {http://dx.doi.org/10.1016/S0006-3495(02)73903-9},
 	url = {http://www.sciencedirect.com/science/article/pii/S0006349502739039},
-	author = {Radhakrishnan Mahadevan and Jeremy S. Edwards and Francis J. Doyle III},
+	author = {Mahadevan, R and Edwards, JS and Doyle III, FJ},
 	abstract = {Flux Balance Analysis (FBA) has been used in the past to analyze microbial metabolic networks. Typically, \{FBA\} is used to study the metabolic flux at a particular steady state of the system. However, there are many situations where the reprogramming of the metabolic network is important. Therefore, the dynamics of these metabolic networks have to be studied. In this paper, we have extended \{FBA\} to account for dynamics and present two different formulations for dynamic FBA. These two approaches were used in the analysis of diauxic growth in Escherichia coli. Dynamic \{FBA\} was used to simulate the batch growth of E. coli on glucose, and the predictions were found to qualitatively match experimental data. The dynamic \{FBA\} formalism was also used to study the sensitivity to the objective function. It was found that an instantaneous objective function resulted in better predictions than a terminal-type objective function. The constraints that govern the growth at different phases in the batch culture were also identified. Therefore, dynamic \{FBA\} provides a framework for analyzing the transience of metabolism due to metabolic reprogramming and for obtaining insights for the design of metabolic networks.}
 }
 
 @article{2007_young_ramkrishna_BiotechProg,
-	author = {Young, Jamey D. and Ramkrishna, Doraiswami},
+	author = {Young, JD and Ramkrishna, D},
 	title = {On the Matching and Proportional Laws of Cybernetic Models},
-	journal = {Biotechnology Progress},
+	journal = {Biotechnol. Progr.},
 	volume = {23},
 	number = {1},
 	publisher = {American Chemical Society},
@@ -111,7 +102,7 @@
 	}
 
 @phdthesis{2005_Young,
-  author       = {Jamey D Young}, 
+  author       = {Young, JD}, 
   title        = {A system-level mathematical description of metabolic regulation combining aspects of elementary mode analysis with cybernetic control laws},
   school       = {Purdue University},
   year         = 2005,
@@ -122,7 +113,7 @@
 
 @article{2010_saltelli,
 	title = "Variance based sensitivity analysis of model output. Design and estimator for the total sensitivity index ",
-	journal = "Computer Physics Communications ",
+	journal = "Comput. Phys. Commun.",
 	volume = "181",
 	number = "2",
 	pages = "259 - 270",
@@ -131,12 +122,12 @@
 	issn = "0010-4655",
 	doi = "http://dx.doi.org/10.1016/j.cpc.2009.09.018",
 	url = "http://www.sciencedirect.com/science/article/pii/S0010465509003087",
-	author = "Andrea Saltelli and Paola Annoni and Ivano Azzini and Francesca Campolongo and Marco Ratto and Stefano Tarantola"
+	author = "Saltelli, A and Annoni, P and Azzini, I and Campolongo, F and Ratto, M and Tarantola, S"
 }
 
 @article{2001_covert_schilling_palsson,
 	title = "Regulation of Gene Expression in Flux Balance Models of Metabolism ",
-	journal = "Journal of Theoretical Biology ",
+	journal = "J. Theor. Biol.",
 	volume = "213",
 	number = "1",
 	pages = "73 - 88",
@@ -145,11 +136,11 @@
 	issn = "0022-5193",
 	doi = "http://dx.doi.org/10.1006/jtbi.2001.2405",
 	url = "http://www.sciencedirect.com/science/article/pii/S0022519301924051",
-	author = "Markus W. Covert and Christophe H. Schilling and Bernhard O. Palsson"
+	author = "Covert, MW and Schilling, CH and Palsson, B{\O}"
 }
 
 @article{2006_vonKamp_Metatool,
-	author = {Kamp, Axel von and Schuster, Stefan}, 
+	author = {Kamp, A and Schuster, S}, 
 	title = {Metatool 5.0: fast and flexible elementary modes analysis},
 	volume = {22}, 
 	number = {15}, 
@@ -158,14 +149,13 @@
 	doi = {10.1093/bioinformatics/btl267}, 
 	abstract ={Summary: Elementary modes analysis is a powerful tool in the constraint-based modeling of metabolic networks. In recent years, new approaches to calculating elementary modes in biochemical reaction networks have been developed. As a consequence, the program Metatool, which is one of the first programs dedicated to this purpose, has been reimplemented in order to make use of these new approaches. The performance of Metatool has been significantly increased and the new version 5.0 can now be run inside the GNU octave or Matlab environments to allow more flexible usage and integration with other tools.Availability: The script files and compiled shared libraries can be downloaded from the Metatool website at http://pinguin.biologie.uni-jena.de/bioinformatik/networks/index.html. Metatool consists of script files (m-files) for GNU octave as well as Matlab and shared libraries. The scripts are licensed under the GNU Public License and the use of the shared libraries is free for academic users and testing purposes. Commercial use of Metatool requires a special contract.Contact:kamp@minet.uni-jena.de}, 
 	URL = {http://bioinformatics.oxfordjournals.org/content/22/15/1930.abstract}, 
-	eprint = {http://bioinformatics.oxfordjournals.org/content/22/15/1930.full.pdf+html}, 
 	journal = {Bioinformatics} 
 }
 
 @article{2010_song_ramkrishna,
-	author = {Song, Hyun-Seob and Ramkrishna, Doraiswami},
+	author = {Song, HS and Ramkrishna, D},
 	title = {Cybernetic models based on lumped elementary modes accurately predict strain-specific metabolic function},
-	journal = {Biotechnology and Bioengineering},
+	journal = {Biotechnol. Bioeng.},
 	volume = {108},
 	number = {1},
 	publisher = {Wiley Subscription Services, Inc., A Wiley Company},
@@ -178,3 +168,16 @@
 }
 
 
+@book{shuler_book,
+  author    = {Shuler, ML and Kargi, FF}, 
+  title     = {Bioprocess Engineering: Basic Concepts},
+  publisher = {Prentice Hall},
+  year      = 2007,
+  volume    = ,
+  series    = ,
+  address   = {},
+  edition   = 2,
+  month     = ,
+  note      = {},
+  isbn      = {3257227892}
+}

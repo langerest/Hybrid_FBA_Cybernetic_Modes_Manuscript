@@ -1,49 +1,49 @@
-This is BibTeX, Version 0.99d (TeX Live 2015)
+This is BibTeX, Version 0.99d (TeX Live 2015/dev/Debian)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: Paper_v1.aux
-The style file: unsrt.bst
+The style file: naturemag_noURL.bst
 Database file #1: Paper_v1.bib
-You're missing a field part---line 119 of file Paper_v1.bib
+You're missing a field part---line 110 of file Paper_v1.bib
  :   month        = 
  :                  ,
 I'm skipping whatever remains of this entry
-You're missing a field part---line 186 of file Paper_v1.bib
+You're missing a field part---line 176 of file Paper_v1.bib
  :   volume    = 
  :               ,
 I'm skipping whatever remains of this entry
 You've used 14 entries,
-            1791 wiz_defined-function locations,
-            547 strings with 6533 characters,
-and the built_in function-call counts, 3142 in all, are:
-= -- 281
-> -- 130
+            2344 wiz_defined-function locations,
+            1087 strings with 11924 characters,
+and the built_in function-call counts, 5253 in all, are:
+= -- 371
+> -- 128
 < -- 0
-+ -- 49
-- -- 35
-* -- 239
-:= -- 514
-add.period$ -- 42
++ -- 64
+- -- 32
+* -- 661
+:= -- 591
+add.period$ -- 40
 call.type$ -- 14
 change.case$ -- 11
 chr.to.int$ -- 0
 cite$ -- 14
-duplicate$ -- 125
-empty$ -- 313
-format.name$ -- 35
-if$ -- 688
+duplicate$ -- 459
+empty$ -- 485
+format.name$ -- 44
+if$ -- 1048
 int.to.chr$ -- 0
 int.to.str$ -- 14
-missing$ -- 15
-newline$ -- 73
+missing$ -- 112
+newline$ -- 76
 num.names$ -- 14
-pop$ -- 26
+pop$ -- 79
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 43
+skip$ -- 76
 stack$ -- 0
 substring$ -- 253
-swap$ -- 14
+swap$ -- 467
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0

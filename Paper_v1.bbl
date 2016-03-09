@@ -1,82 +1,119 @@
 \begin{thebibliography}{10}
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{\texttt{#1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+\providecommand{\bibinfo}[2]{#2}
+\providecommand{\eprint}[2][]{\url{#2}}
 
 \bibitem{shuler_book}
-Fikret F.~Kargi Michael L~Shuler.
-\newblock {\em Bioprocess Engineering: Basic Concepts}.
-\newblock Prentice Hall, 2007.
+\bibinfo{author}{Shuler, M.} \& \bibinfo{author}{Kargi, F.}
+\newblock \emph{\bibinfo{title}{Bioprocess Engineering: Basic Concepts}}
+  (\bibinfo{publisher}{Prentice Hall}, \bibinfo{year}{2007}).
 
 \bibitem{2006_vonKamp_Metatool}
-Axel~von Kamp and Stefan Schuster.
-\newblock Metatool 5.0: fast and flexible elementary modes analysis.
-\newblock {\em Bioinformatics}, 22(15):1930--1931, 2006.
+\bibinfo{author}{Kamp, A.} \& \bibinfo{author}{Schuster, S.}
+\newblock \bibinfo{title}{Metatool 5.0: fast and flexible elementary modes
+  analysis}.
+\newblock \emph{\bibinfo{journal}{Bioinformatics}}
+  \textbf{\bibinfo{volume}{22}}, \bibinfo{pages}{1930--1931}
+  (\bibinfo{year}{2006}).
 
 \bibitem{2010_orth_NatBiotech}
-Jeffrey~D Orth, Ines Thiele, and Bernhard~{\O} Palsson.
-\newblock What is flux balance analysis?
-\newblock {\em Nature biotechnology}, 28(3):245--248, 2010.
+\bibinfo{author}{Orth, J.}, \bibinfo{author}{Thiele, I.} \&
+  \bibinfo{author}{Palsson, B.}
+\newblock \bibinfo{title}{What is flux balance analysis?}
+\newblock \emph{\bibinfo{journal}{Nat. Biotechnol.}}
+  \textbf{\bibinfo{volume}{28}}, \bibinfo{pages}{245--248}
+  (\bibinfo{year}{2010}).
 
 \bibitem{1994_varma_palsson_ApplEnvMicro}
-Amit Varma and Bernhard~O Palsson.
-\newblock Stoichiometric flux balance models quantitatively predict growth and
-  metabolic by-product secretion in wild-type escherichia coli w3110.
-\newblock {\em Applied and Environmental Microbiology}, 60(10):3724--3731,
-  1994.
+\bibinfo{author}{Varma, A.} \& \bibinfo{author}{Palsson, B.}
+\newblock \bibinfo{title}{Stoichiometric flux balance models quantitatively
+  predict growth and metabolic by-product secretion in wild-type escherichia
+  coli w3110.}
+\newblock \emph{\bibinfo{journal}{Appl. Environ. Microbiol.}}
+  \textbf{\bibinfo{volume}{60}}, \bibinfo{pages}{3724--3731}
+  (\bibinfo{year}{1994}).
 
 \bibitem{2002_Mahadevan_BiophysJ}
-Radhakrishnan Mahadevan, Jeremy~S. Edwards, and Francis J.~Doyle III.
-\newblock Dynamic flux balance analysis of diauxic growth in escherichia coli.
-\newblock {\em Biophysical Journal}, 83(3):1331 -- 1340, 2002.
+\bibinfo{author}{Mahadevan, R.}, \bibinfo{author}{Edwards, J.} \&
+  \bibinfo{author}{Doyle~III, F.}
+\newblock \bibinfo{title}{Dynamic flux balance analysis of diauxic growth in
+  escherichia coli}.
+\newblock \emph{\bibinfo{journal}{Biophys. J.}} \textbf{\bibinfo{volume}{83}},
+  \bibinfo{pages}{1331 -- 1340} (\bibinfo{year}{2002}).
 
 \bibitem{2008_kim_varner_ramkrishna_BiotechProg}
-Jin~Il Kim, Jeffery~D. Varner, and Doraiswami Ramkrishna.
-\newblock A hybrid model of anaerobic e. coli gjt001: Combination of elementary
-  flux modes and cybernetic variables.
-\newblock {\em Biotechnology Progress}, 24(5):993--1006, 2008.
+\bibinfo{author}{Kim, J.}, \bibinfo{author}{Varner, J.} \&
+  \bibinfo{author}{Ramkrishna, D.}
+\newblock \bibinfo{title}{A hybrid model of anaerobic e. coli gjt001:
+  Combination of elementary flux modes and cybernetic variables}.
+\newblock \emph{\bibinfo{journal}{Biotechnol. Prog.}}
+  \textbf{\bibinfo{volume}{24}}, \bibinfo{pages}{993--1006}
+  (\bibinfo{year}{2008}).
 
 \bibitem{2004_lee_varner_ko_ieee}
-Lie-Quan Lee, Jeff Varner, and Kwok Ko.
-\newblock Parallel extreme pathway computation for metabolic networks.
-\newblock {\em Computational Systems Bioinformatics Conference, International
-  IEEE Computer Society}, 0:636--639, 2004.
+\bibinfo{author}{Lee, L.}, \bibinfo{author}{Varner, J.} \& \bibinfo{author}{Ko,
+  K.}
+\newblock \bibinfo{title}{Parallel extreme pathway computation for metabolic
+  networks}.
+\newblock \emph{\bibinfo{journal}{Comput Syst Bioinformatics Conf, Int IEEE
+  CS}} \textbf{\bibinfo{volume}{0}}, \bibinfo{pages}{636--639}
+  (\bibinfo{year}{2004}).
 
 \bibitem{2001_covert_schilling_palsson}
-Markus~W. Covert, Christophe~H. Schilling, and Bernhard~O. Palsson.
-\newblock Regulation of gene expression in flux balance models of metabolism.
-\newblock {\em Journal of Theoretical Biology}, 213(1):73 -- 88, 2001.
+\bibinfo{author}{Covert, M.}, \bibinfo{author}{Schilling, C.} \&
+  \bibinfo{author}{Palsson, B.}
+\newblock \bibinfo{title}{Regulation of gene expression in flux balance models
+  of metabolism}.
+\newblock \emph{\bibinfo{journal}{J. Theor. Biol.}}
+  \textbf{\bibinfo{volume}{213}}, \bibinfo{pages}{73 -- 88}
+  (\bibinfo{year}{2001}).
 
 \bibitem{2010_song_ramkrishna}
-Hyun-Seob Song and Doraiswami Ramkrishna.
-\newblock Cybernetic models based on lumped elementary modes accurately predict
-  strain-specific metabolic function.
-\newblock {\em Biotechnology and Bioengineering}, 108(1):127--140, 2011.
+\bibinfo{author}{Song, H.} \& \bibinfo{author}{Ramkrishna, D.}
+\newblock \bibinfo{title}{Cybernetic models based on lumped elementary modes
+  accurately predict strain-specific metabolic function}.
+\newblock \emph{\bibinfo{journal}{Biotechnol. Bioeng.}}
+  \textbf{\bibinfo{volume}{108}}, \bibinfo{pages}{127--140}
+  (\bibinfo{year}{2011}).
 
 \bibitem{2007_schuetz_etal_MolSysBio}
-Robert Schuetz, Lars Kuepfer, and Uwe Sauer.
-\newblock Systematic evaluation of objective functions for predicting
-  intracellular fluxes in escherichia coli.
-\newblock {\em Molecular Systems Biology}, 3(1), 2007.
+\bibinfo{author}{Schuetz, R.}, \bibinfo{author}{Kuepfer, L.} \&
+  \bibinfo{author}{Sauer, U.}
+\newblock \bibinfo{title}{Systematic evaluation of objective functions for
+  predicting intracellular fluxes in escherichia coli}.
+\newblock \emph{\bibinfo{journal}{Mol. Syst. Biol.}}
+  \textbf{\bibinfo{volume}{3}} (\bibinfo{year}{2007}).
 
 \bibitem{2006_Palsson_model}
-Bernhard~O. Palsson.
-\newblock {\em Systems Biology: Properties of Reconstructed Networks}.
-\newblock Cambridge University Press, New York, NY, USA, 2006.
+\bibinfo{author}{Palsson, B.}
+\newblock \emph{\bibinfo{title}{Systems Biology: Properties of Reconstructed
+  Networks}} (\bibinfo{publisher}{Cambridge University Press},
+  \bibinfo{address}{New York, NY, USA}, \bibinfo{year}{2006}).
 
 \bibitem{2007_young_ramkrishna_BiotechProg}
-Jamey~D. Young and Doraiswami Ramkrishna.
-\newblock On the matching and proportional laws of cybernetic models.
-\newblock {\em Biotechnology Progress}, 23(1):83--99, 2007.
+\bibinfo{author}{Young, J.} \& \bibinfo{author}{Ramkrishna, D.}
+\newblock \bibinfo{title}{On the matching and proportional laws of cybernetic
+  models}.
+\newblock \emph{\bibinfo{journal}{Biotechnol. Progr.}}
+  \textbf{\bibinfo{volume}{23}}, \bibinfo{pages}{83--99}
+  (\bibinfo{year}{2007}).
 
 \bibitem{2005_Young}
-Jamey~D Young.
-\newblock {\em A system-level mathematical description of metabolic regulation
-  combining aspects of elementary mode analysis with cybernetic control laws}.
-\newblock PhD thesis, Purdue University, 2005.
+\bibinfo{author}{Young, J.}
+\newblock \emph{\bibinfo{title}{A system-level mathematical description of
+  metabolic regulation combining aspects of elementary mode analysis with
+  cybernetic control laws}}.
+\newblock Ph.D. thesis, \bibinfo{school}{Purdue University}
+  (\bibinfo{year}{2005}).
 
 \bibitem{2010_saltelli}
-Andrea Saltelli, Paola Annoni, Ivano Azzini, Francesca Campolongo, Marco Ratto,
-  and Stefano Tarantola.
-\newblock Variance based sensitivity analysis of model output. design and
-  estimator for the total sensitivity index.
-\newblock {\em Computer Physics Communications}, 181(2):259 -- 270, 2010.
+\bibinfo{author}{Saltelli, A.} \emph{et~al.}
+\newblock \bibinfo{title}{Variance based sensitivity analysis of model output.
+  design and estimator for the total sensitivity index}.
+\newblock \emph{\bibinfo{journal}{Comput. Phys. Commun.}}
+  \textbf{\bibinfo{volume}{181}}, \bibinfo{pages}{259 -- 270}
+  (\bibinfo{year}{2010}).
 
 \end{thebibliography}
