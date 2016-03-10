@@ -92,12 +92,30 @@
   Networks}} (\bibinfo{publisher}{Cambridge University Press},
   \bibinfo{address}{New York, NY, USA}, \bibinfo{year}{2006}).
 
-\bibitem{2010_saltelli}
-\bibinfo{author}{Saltelli, A.} \emph{et~al.}
-\newblock \bibinfo{title}{Variance based sensitivity analysis of model output.
-  design and estimator for the total sensitivity index}.
-\newblock \emph{\bibinfo{journal}{Comput. Phys. Commun.}}
-  \textbf{\bibinfo{volume}{181}}, \bibinfo{pages}{259 -- 270}
-  (\bibinfo{year}{2010}).
+\bibitem{Julia}
+\bibinfo{author}{Bezanson, J.}, \bibinfo{author}{Karpinski, S.},
+  \bibinfo{author}{Shah, V.~B.} \& \bibinfo{author}{Edelman, A.}
+\newblock \bibinfo{title}{Julia: {A} fast dynamic language for technical
+  computing}.
+\newblock \emph{\bibinfo{journal}{CoRR}}
+  \textbf{\bibinfo{volume}{abs/1209.5145}} (\bibinfo{year}{2012}).
+
+\bibitem{Sundials}
+\bibinfo{author}{Hindmarsh, A.~C.} \emph{et~al.}
+\newblock \bibinfo{title}{Sundials: Suite of nonlinear and
+  differential/algebraic equation solvers}.
+\newblock \emph{\bibinfo{journal}{ACM Trans. Math. Softw.}}
+  \textbf{\bibinfo{volume}{31}}, \bibinfo{pages}{363--396}
+  (\bibinfo{year}{2005}).
+
+\bibitem{GLPK}
+\bibinfo{author}{Makhorin, A.}
+\newblock \bibinfo{title}{Glpk (gnu linear programming kit). available online:
+  https://www.gnu.org/software/glpk/} .
+
+\bibitem{SALib}
+\bibinfo{author}{Herman, J.}
+\newblock \bibinfo{title}{Salib. available online:
+  https://github.com/jdherman/salib} .
 
 \end{thebibliography}

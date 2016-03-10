@@ -61,7 +61,7 @@ Structured modeling approaches have made great progress to describe metabolic pa
 
 Convex and constraints based analysis methods, such as EM, FBA and MFA,
 describe intracellular metabolism using the stoichiometry of the biochemical networks and the pseudo-steady state assumption \cite{2010_orth_NatBiotech}.
-EM analysis is a powerful tool to decompse a metabolic network into independent minimal pathways that are stoihiometrically and thermodynamically feasible.
+EM analysis is a powerful tool to decompse a metabolic network into independent minimal pathways that are stoichiometrically and thermodynamically feasible.
 However, elementary mode calculations are computational expensive and infeasible for genome scale networks\cite{2004_lee_varner_ko_ieee}.
 FBA is frequently used to study genome-scale networks\cite{2010_orth_NatBiotech} and often results in good approximations for yields, however it fails to estimate intracellular metabolism due to its underdetermined solution space.
 Compared with FBA, MFA has good estimations of intracellular metabolism, but is dependent on experimental data.
@@ -95,11 +95,12 @@ For this proof of concept model, HCM FBA was able to use fewer modes and kinetic
 
 The performance of HCM FBA was equivalent to HCM EM for a small model of anaerobic \textit{E. coli} metabolism (Fig. \ref{fig:ecoli}, left).
 In the case, we demonstrated that HCM FBA has comparable model performance to a published HCM EM model \cite{2008_kim_varner_ramkrishna_BiotechProg}.
-The metabolic network consisted of 12 reactions, where we calculated 9 elementary modes and 7 FBA modes.
+The metabolic network consisted of 12 reactions and 19 metabolites, where we calculated 9 elementary modes and 7 FBA modes.
 The simulated HCM EM concentration profiles of biomass, substrate and fermentation products (Fig. \ref {fig:ecoli}A (dashed line)) were generated using the kinetic parameters and elementary modes reported\cite{2008_kim_varner_ramkrishna_BiotechProg}.
 The kinetic parameters of HCM FBA were varied to fit the same experimental observations.
 HCM FBA has 17 kinetic parameters while HCM EM has 21 kinetic parameters and both models resulted in similar fits to the experimental data (Fig. \ref {fig:ecoli}A).
-HCM FBA had a slightly better fit on lactate than HCM EM.
+HCM FBA had a better fit on lactate than HCM EM by 35.6\% on the residual standard error. 
+However, HCM EM had a lower residual standard error on the overall performance by 4.5\%. 
 
 \begin{figure}[!t]\centering
 \includegraphics[width=0.48\textwidth]{./figs/Fig-2-Ecoli-SimulationResults.pdf}
@@ -169,23 +170,23 @@ The quantity $\sigma_{ij}$ denotes the stoichiometric coefficient for species $i
 If $\sigma_{ij}>0$, species $i$ is produced by reaction $j$,
 if $\sigma_{ij}<0$, species $i$ is consumed by reaction $j$, while $\sigma_{ij} = 0$ indicates species $i$ is not connected with reaction $j$.
 Extracellular species balances were subject to the initial conditions $\mathbf{x}\left(t_{o}\right) = \mathbf{x}_{o}$ determined from experimental data.
-The term $r_{l}\left(\mathbf{e},\mathbf{k},\mathbf{x}\right)$ denotes the specific rate of flux through mode $l$, and was written as the product of a kinetic term ($\bar{r}_{l}$) and a cybernetic control variable governing enzyme activity. Flux through each mode was catalyzed by a pseudo enzyme $e_{l}$, where enzyme $e_{l}$ was synthesized at the regulated specific rate $r_{E,l}\left(\mathbf{k},\mathbf{s}\right)$ and constitutively at the rate $\alpha_{l}$. The term $r_{E,l}$ denotes the specific rate enzyme synthesis for enzyme l, and $u_{l}$ denotes the cybernetic variable controlling the synthesis of enzyme l. The term $\beta_{l}$ denotes the rate constant governing enzyme degradation, and $r_{G}$ denotes the growth rate through all modes.
+The term $r_{l}\left(\mathbf{e},\mathbf{k},\mathbf{x}\right)$ denotes the specific rate of flux through mode $l$, and was written as the product of a kinetic term ($\bar{r}_{l}$) and a cybernetic control variable governing enzyme activity. Flux through each mode was catalyzed by a pseudo enzyme $e_{l}$, where enzyme $e_{l}$ was synthesized at the regulated specific rate $r_{E,l}\left(\mathbf{k},\mathbf{x}\right)$ and constitutively at the rate $\alpha_{l}$. The term $r_{E,l}$ denotes the specific rate enzyme synthesis for enzyme $l$, and $u_{l}$ denotes the cybernetic variable controlling the synthesis of enzyme $l$. The term $\beta_{l}$ denotes the rate constant governing enzyme degradation, and $r_{G}$ denotes the growth rate through all modes.
 The specific rate of flux through an FBA mode, and the specific rate of enzyme synthesis were modeled using saturation kinetics.
 All enzyme initial conditions were set to 0.9 for the anaerobic case, and 0.8 for the aerobic case.
 Lastly, cellmass was produced at the specific growth rate:
 \begin{equation}
-	r_{G}  = \sum_{l = 1}^{\mathcal{L}}z_{\mu l}r_{l}\left(\mathbf{e},\mathbf{k},\mathbf{s}\right)
+	r_{G}  = \sum_{l = 1}^{\mathcal{L}}z_{\mu l}r_{l}\left(\mathbf{e},\mathbf{k},\mathbf{x}\right)
 \end{equation}
 where $z_{\mu l}$ denotes the growth flux $\mu$ through mode $l$.
 The cybernetic control variables $u_{l}$ and $v_{l}$, which control the synthesis and activity of each enzyme respectively, were given by:
 \begin{align*}
-	u_{l}  = \frac{z_{s,l}\bar{r}_{l}}{\sum\limits_{l = 1}^{\mathcal{L}}z_{sl}\bar{r}_{l}} && v_{l} = \frac{z_{s,l}\bar{r}_{l}}{\max\limits_{l=1} z_{sl}\bar{r}_{l}}
+	u_{l}  = \frac{z_{sl}\bar{r}_{l}}{\sum\limits_{l = 1}^{\mathcal{L}}z_{sl}\bar{r}_{l}} && v_{l} = \frac{z_{sl}\bar{r}_{l}}{\max\limits_{\mathbf{l}} z_{sl}\bar{r}_{l}}
 \end{align*}
 where $z_{sl}$ denotes the uptake flux of substrate $x$ through mode $l$.
 In the anaerobic case we followed the assumption of Kim et al.\cite{2008_kim_varner_ramkrishna_BiotechProg},
 that formate decomposition occurs only outside the network (applicable for strain GJT001).
 Therefore its enzyme activity was assumed to be at its maximum level of unity.
-The reaction rate for formate was also modified following Kim et al.\cite{2008_kim_varner_ramkrishna_BiotechProg}
+The reaction rate for formate was also modified following Kim et al.\cite{2008_kim_varner_ramkrishna_BiotechProg}. All numerical simulations were conducted in Julia version 0.4.2, a high-level, high performance dynamic programming language \cite{Julia}. Species balances were solved using a Sundials \cite{Sundials} wrapper for julia.  
 
 \noindent\subsubsection*{Elementary Mode and Flux Balance Analysis}
 Elementary modes were calculated using METATOOL 5.1 \cite{2006_vonKamp_Metatool}.
@@ -201,16 +202,16 @@ The FBA problem was formulated as:
 \end{equation}
 where $\mathbf{S}$ denotes the stoichiometric matrix, $\mathbf{w}$ denotes the unknown flux vector, $\boldsymbol{\theta}$ denotes the objective selection vector
 and $\alpha_i$ and $\beta_i$ denote the lower and upper bounds on flux $w_{i}$, respectively.
-The flux balance analysis problem was solved using the GNU Linear Programming Kit, GLPK version 4.52 [REF].
+The flux balance analysis problem was solved using the GNU Linear Programming Kit, GLPK version 4.52 \cite{GLPK}.
 For each FBA mode, the objective was to maximize either the growth rate, or the specific rate of byproduct formation from a specified starting substrate.
 Multiple FBA modes were calculated for each objective flux by allowing the oxygen and nitrate uptake rates to be either zero or maximal.
 For aerobic metabolism, the specific oxygen and nitrate uptake rates were constrained to allow a maximum flux of 10 mM/gDW$\cdot$hr and 0.05 mM/gDW$\cdot$hr, respectively.
 Each flux vector was normalized by the growth flux, or by the specified objective flux.
 
 \subsubsection*{Global Sensitivity Analysis}
-Variance based sensitivity analysis was used to estimate which FBA modes were critical to model performance \cite{2010_saltelli}.
+Variance based sensitivity analysis was used to estimate which FBA modes were critical to model performance.
 The performance function used in this study was the biomass yield on substrate.
-Candidate parameter sets (N = 182,000) were generated using Sobol sampling by perturbing the best fit parameter set $\pm50\%$ [REF].
+Candidate parameter sets (N = 182,000) were generated using Sobol sampling by perturbing the best fit parameter set $\pm50\%$ \cite{SALib}.
 Model performance, calculated for each of these parameter sets, was then used to estimate the total-order sensitivity coefficient for each model parameter.
 
 \subsubsection*{Estimation of model parameters}
@@ -221,8 +222,7 @@ Model parameters were estimated by minimizing the difference between simulations
 \end{equation}
 where $\hat{x}_{j}\left(\tau\right)$ denotes the measured value of species $j$ at time $\tau$, $x_{j}\left(\tau,\mathbf{k}\right)$ denotes the simulated
 value for species $j$ at time $\tau$, and $\omega_{j}\left(\tau\right)$ denotes the experimental measurement variance for species $j$ at time $\tau$.
-The outer summation is with respect to time, while the inner summation is with respect to state. The model residual was minimized using the simulated annealing routine
-in the JuMP package [REF].
+The outer summation is with respect to time, while the inner summation is with respect to state. The model residual was minimized using simulated annealing.
 
 % References -
 \bibliographystyle{naturemag_noURL}

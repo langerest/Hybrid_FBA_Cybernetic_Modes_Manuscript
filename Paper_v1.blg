@@ -1,4 +1,4 @@
-This is BibTeX, Version 0.99d (TeX Live 2015)
+This is BibTeX, Version 0.99d (TeX Live 2015/dev/Debian)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: Paper_v1.aux
 The style file: naturemag_noURL.bst
@@ -7,49 +7,53 @@ You're missing a field part---line 110 of file Paper_v1.bib
  :   month        = 
  :                  ,
 I'm skipping whatever remains of this entry
-You're missing a field part---line 176 of file Paper_v1.bib
+You're missing a field part---line 210 of file Paper_v1.bib
  :   volume    = 
  :               ,
 I'm skipping whatever remains of this entry
-You've used 12 entries,
+Warning--empty journal in GLPK
+Warning--empty year in GLPK
+Warning--empty journal in SALib
+Warning--empty year in SALib
+You've used 15 entries,
             2344 wiz_defined-function locations,
-            1072 strings with 11499 characters,
-and the built_in function-call counts, 4650 in all, are:
-= -- 327
-> -- 116
+            1091 strings with 11873 characters,
+and the built_in function-call counts, 5405 in all, are:
+= -- 368
+> -- 140
 < -- 0
-+ -- 58
-- -- 29
-* -- 591
-:= -- 520
-add.period$ -- 34
-call.type$ -- 12
-change.case$ -- 10
++ -- 70
+- -- 35
+* -- 670
+:= -- 606
+add.period$ -- 41
+call.type$ -- 15
+change.case$ -- 13
 chr.to.int$ -- 0
-cite$ -- 12
-duplicate$ -- 399
-empty$ -- 429
-format.name$ -- 40
-if$ -- 930
+cite$ -- 19
+duplicate$ -- 484
+empty$ -- 498
+format.name$ -- 47
+if$ -- 1071
 int.to.chr$ -- 0
-int.to.str$ -- 12
-missing$ -- 99
-newline$ -- 66
-num.names$ -- 12
-pop$ -- 69
+int.to.str$ -- 15
+missing$ -- 118
+newline$ -- 79
+num.names$ -- 15
+pop$ -- 100
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 68
+skip$ -- 89
 stack$ -- 0
-substring$ -- 234
-swap$ -- 411
+substring$ -- 232
+swap$ -- 472
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 0
-while$ -- 24
-width$ -- 14
-write$ -- 133
+warning$ -- 4
+while$ -- 28
+width$ -- 17
+write$ -- 158
 (There were 2 error messages)
