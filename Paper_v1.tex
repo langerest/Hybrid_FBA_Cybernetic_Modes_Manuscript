@@ -65,7 +65,7 @@ EM analysis is a powerful tool to decompse a metabolic network into independent 
 However, elementary mode calculations are computational expensive and infeasible for genome scale networks\cite{2004_lee_varner_ko_ieee}.
 FBA is frequently used to study genome-scale networks\cite{2010_orth_NatBiotech} and often results in good approximations for yields, however it fails to estimate intracellular metabolism due to its underdetermined solution space.
 Compared with FBA, MFA has good estimations of intracellular metabolism, but is dependent on experimental data.
-Just like FBA, HCM approaches cell metabolism as a resource allocation problem towards a specified objective. 
+Just like FBA, HCM approaches cell metabolism as a resource allocation problem towards a specified objective.
 But HCM has multiple pathways to select from (elementary modes) and can use a combination of modes to direct its resources through the cell.
 HCM has been shown to have comparable internal flux estimations to MFA and is able to estimate dynamic external fluxes with respect to experimental observations \cite{2008_kim_varner_ramkrishna_BiotechProg}.\
 DFBA is able to account for dynamic external fluxes but fails to incorporate the regulatory processes involved with HCM without the use of boolean rules\cite{2001_covert_schilling_palsson}.
@@ -74,7 +74,7 @@ Recent work has been done to reduce the number of elementary modes by lumping mo
 
 In this study, we developed a hybrid cybernetic model in combination with flux balance analysis modes instead of elementary modes.
 We show HCM FBA has comparable model performance to HCM EM for a hypothetical metabolic network and a reduced anaerobic \textit{E. coli} network.
-HCM EM and HCM FBA were then applied to a large metabolic network. 
+HCM EM and HCM FBA were then applied to a large metabolic network.
 The number of elementary modes made it impractical to model with HCM EM, but HCM FBA was computationally feasible and performed well with respect to experimental observations.
 Taken together, HCM FBA has comparable model performace to HCM EM and may be potentially applied to genome-scale networks which was a shortcoming of HCM EM.
 
@@ -158,74 +158,60 @@ FBA modes do not have the thorough information as elementary modes, but provide 
 %HCM FBA may also be applied to mammalian networks, as long as FBA accounts for compartmentalization within mammalian systems.
 
 \section{Materials and Methods}
-
-\noindent\subsubsection*{HCM FBA method.}
-The model was constructed using the hybrid cybernetic approach of Kim et al.\cite{2008_kim_varner_ramkrishna_BiotechProg}.
-The abundance of extracellular species $i$ ($x_{i}$) is governed by:
-\begin{equation}
-	\frac{dx_{i}}{dt}  =  \sum_{j = 1}^{\mathcal{R}}\sum_{l = 1}^{\mathcal{L}}\sigma_{ij}z_{jl}r_{l}\left(\mathbf{e},\mathbf{k},\mathbf{s}\right)c \qquad{i=1,\hdots,\mathcal{M}}
-\end{equation}
-where $\mathcal{R}$ and $\mathcal{M}$ denotes the number of reactions and extracellular species in the model, and $\mathcal{L}$ denotes the number of modes.
-The quantity $\sigma_{ij}$ denotes the stoichiometric coefficient for species $i$ in reaction $j$ and
-$z_{jl}$ denotes the normalized flux for reaction $j$ in mode $l$.
-If $\sigma_{ij}>0$, species $i$ is produced by reaction $j$, if $\sigma_{ij}<0$, species $i$ is consumed by reaction $j$, while $\sigma_{ij} = 0$ indicates species $i$ is not connected with reaction $j$.
+The HCM FBA approach is a modification of the HCM EM strategy of Kim et al. \cite{2008_kim_varner_ramkrishna_BiotechProg}. However, unlike HCM EM, we replaced elementary modes with flux balance analysis solutions. The abundance of extracellular species $i$ ($x_{i}$), the pseudo enzyme $e_{l}$ and cellmass are governed by:
+\begin{eqnarray}\nonumber
+	\frac{dx_{i}}{dt}  & = &  \sum_{j = 1}^{\mathcal{R}}\sum_{l = 1}^{\mathcal{L}}\sigma_{ij}z_{jl}r_{l}\left(\mathbf{e},\mathbf{k},\mathbf{x}\right)c \qquad{i=1,\hdots,\mathcal{M}}\\\nonumber
+  \frac{de_{l}}{dt}  & = & \alpha_{l} + r_{E,l}\left(\mathbf{k},\mathbf{x}\right)u_{l} - \left(\beta_{l}+r_{G}\right)e_{l} \qquad l=1,\hdots,\mathcal{L} \\\nonumber
+  \frac{dc}{dt} & = & r_{G}c
+\end{eqnarray}
+where $\mathcal{R}$ and $\mathcal{M}$ denote the number of reactions and extracellular species in the model, and $\mathcal{L}$ denotes the number of FBA modes.
+The quantity $\sigma_{ij}$ denotes the stoichiometric coefficient for species $i$ in reaction $j$ and $z_{jl}$ denotes the normalized flux for reaction $j$ in mode $l$.
+If $\sigma_{ij}>0$, species $i$ is produced by reaction $j$,
+if $\sigma_{ij}<0$, species $i$ is consumed by reaction $j$, while $\sigma_{ij} = 0$ indicates species $i$ is not connected with reaction $j$.
 Extracellular species balances were subject to the initial conditions $\mathbf{x}\left(t_{o}\right) = \mathbf{x}_{o}$ determined from experimental data.
-The $r_{l}\left(\mathbf{e},\mathbf{k},\mathbf{s}\right)$ term denotes the regulated uptake rate of mode $k$, and was written as the product of a kinetic term ($\bar{r}_{l}$) and a cybernetic control variable for enzyme activity ($v_{l}$), $r_{l}\left(\mathbf{e},\mathbf{k},\mathbf{s}\right) = \bar{r}_{l}v_{l}$, where $\mathbf{e}$ denotes the enzyme level for each mode which become additional state variables, $\mathbf{k}$ ($\mathcal{K}\times{1}$) denotes the unknown kinetic parameter vector, and $\mathbf{s}$ denotes the substrate utilized. The reaction rate followed Michaelis-Menten kinetics. The abundance of the enzyme species is governed by:
-
-\begin{equation}
-	\frac{de_{l}}{dt}  = \alpha_{l} + r_{E,l}\left(\mathbf{k},\mathbf{s}\right)u_{l} - \left(\beta_{l}+r_{G}\right)e_{l}
-\end{equation}
-where $\alpha_{l}$ denotes the specific rate of constitutive enzyme synthesis for enzyme l, $r_{E,l}\left(\mathbf{k},\mathbf{s}\right)$ denotes the specific rate enzyme synthesis for enzyme l, and $u_{l}$ denotes the cybernetic variable controlling the synthesis of enzyme l.
-The term $\beta_{l}$ denotes the rate constant governing enzyme degradation, and $r_{G}$ denotes the growth rate through all modes.
-The specific rate of enzyme synthesis was modeled using saturation kinetics.
+The term $r_{l}\left(\mathbf{e},\mathbf{k},\mathbf{x}\right)$ denotes the specific rate of flux through mode $l$, and was written as the product of a kinetic term ($\bar{r}_{l}$) and a cybernetic control variable governing enzyme activity. Flux through each mode was catalyzed by a pseudo enzyme $e_{l}$, where enzyme $e_{l}$ was synthesized at the regulated specific rate $r_{E,l}\left(\mathbf{k},\mathbf{s}\right)$ and constitutively at the rate $\alpha_{l}$. The term $r_{E,l}$ denotes the specific rate enzyme synthesis for enzyme l, and $u_{l}$ denotes the cybernetic variable controlling the synthesis of enzyme l. The term $\beta_{l}$ denotes the rate constant governing enzyme degradation, and $r_{G}$ denotes the growth rate through all modes.
+The specific rate of flux through an FBA mode, and the specific rate of enzyme synthesis were modeled using saturation kinetics.
 All enzyme initial conditions were set to 0.9 for the anaerobic case, and 0.8 for the aerobic case.
-
+Lastly, cellmass was produced at the specific growth rate:
 \begin{equation}
 	r_{G}  = \sum_{l = 1}^{\mathcal{L}}z_{\mu l}r_{l}\left(\mathbf{e},\mathbf{k},\mathbf{s}\right)
 \end{equation}
 where $z_{\mu l}$ denotes the growth flux $\mu$ through mode $l$.
-The cybernetic control variables, $u_{l}$ and $v_{l}$, control the synthesis and activity of each enzyme for each mode using the matching and proportional laws\cite{2007_young_ramkrishna_BiotechProg}.
-They are formulated to maximize the overall substrate uptake rate through each mode.
-
-\begin{equation}
-	u_{l}  = \frac{z_{s,l}\bar{r}_{l}}{\sum_{l = 1}^{\mathcal{L}}z_{sl}\bar{r}_{l}}
-\end{equation}
-\begin{equation}
-	v_{l} = \frac{z_{s,l}\bar{r}_{l}}{\max_{l=1} z_{sl}\bar{r}_{l}}
-\end{equation}
-where $z_{sl}$ denotes the uptake flux of substrate $s$ through mode $l$.
-In the anaerobic case we followed the assumption of Young's thesis\cite{2005_Young} and Kim et al.\cite{2008_kim_varner_ramkrishna_BiotechProg} that formate decomposition occurs only outside the network (applicable for strain GJT001).
+The cybernetic control variables $u_{l}$ and $v_{l}$, which control the synthesis and activity of each enzyme respectively, were given by:
+\begin{align*}
+	u_{l}  = \frac{z_{s,l}\bar{r}_{l}}{\sum\limits_{l = 1}^{\mathcal{L}}z_{sl}\bar{r}_{l}} && v_{l} = \frac{z_{s,l}\bar{r}_{l}}{\max\limits_{l=1} z_{sl}\bar{r}_{l}}
+\end{align*}
+where $z_{sl}$ denotes the uptake flux of substrate $x$ through mode $l$.
+In the anaerobic case we followed the assumption of Kim et al.\cite{2008_kim_varner_ramkrishna_BiotechProg},
+that formate decomposition occurs only outside the network (applicable for strain GJT001).
 Therefore its enzyme activity was assumed to be at its maximum level of unity.
 The reaction rate for formate was also modified following Kim et al.\cite{2008_kim_varner_ramkrishna_BiotechProg}
 
-\subsubsection*{Elementary Flux Mode Analysis}
-The elementary flux modes were calculated using METATOOL 5.1\cite{2006_vonKamp_Metatool} for all networks.
-The input file requires the conditions for reversibility/irreversibility reactions and intracellular/extracellular metabolites to be specified.
-
-\subsubsection*{Flux Balance Analysis}
-Flux balance analysis determines an optimal flux vector $\mathbf{w}$ subject to the stoichiometric matrix and flux constraints that maximizes/minimize a specified objective.
-FBA modes were defined as the solution flux vector through the network.
-FBA is formulated by the follwoing:
-
+\noindent\subsubsection*{Elementary Mode and Flux Balance Analysis}
+Elementary modes were calculated using METATOOL 5.1 \cite{2006_vonKamp_Metatool}.
+FBA modes were defined as the solution flux vector through the network connecting substrate uptake to cellmass and extracellular product formation.
+The FBA problem was formulated as:
 \begin{equation}
  \begin{multlined}
-	\qquad \qquad \qquad \max_{\boldsymbol{w}}{} \! \left( w_{obj} = \boldsymbol{c}^T \boldsymbol{w} \right) \\
+	\qquad \qquad \qquad \max_{\boldsymbol{w}}{} \! \left( w_{obj} = \mathbf{\theta}^T \boldsymbol{w} \right) \\
 	\mathrm{Subject \; to:}
-	 \; \; \mathbf{S}\mathbf{w}=0 \mathrm{\; and \;} \mathbf{S_{x}}\mathbf{w} = \mathbf{b} \\
+	 \; \; \mathbf{S}\mathbf{w}=\mathbf{0} \\
 \alpha_i \leq w_i \leq \beta_i  \qquad
  \end{multlined}
 \end{equation}
-where $\boldsymbol{c}$ is a vector of weights indicating how each flux contributes to the objective; $\alpha_i$ and $\beta_i$ are the lower and upper limits for the individual flux values, respectively.
-The stoichoimetric matrix $\mathbf{S}$ denotes the intracellular network where intracellular metabolism has a psuedo steady state approximation.
-$\mathbf{S_{x}}$ denotes the extracellular metabolic network and $\mathbf{b}$ denotes the exchange flux across the cell membrane.
-FBA was solved using linear programming by a GNU Linear Programming Kit, GLPK version 4.52.
-For each mode, the objective was set to maximize either the growth flux or each fermentation byproduct flux from a specified substrate.
-Multiple modes were calculated for each objective flux by allowing the oxygen and nitrate uptake rates to be either nonexistent or its maximum.
-In the aerobic case, oxygen and nitrate uptake rates were constrained to allow a maximum flux of 10 mM/gDW$\cdot$hr and 0.05 mM/gDW$\cdot$hr, respectively.
+where $\mathbf{S}$ denotes the stoichiometric matrix, $\mathbf{w}$ denotes the unknown flux vector, $\boldsymbol{\theta}$ denotes the objective selection vector
+and $\alpha_i$ and $\beta_i$ denote the lower and upper bounds on flux $w_{i}$, respectively.
+The flux balance analysis problem was solved using the GNU Linear Programming Kit, GLPK version 4.52 [REF].
+For each FBA mode, the objective was to maximize either the growth rate, or the specific rate of byproduct formation from a specified starting substrate.
+Multiple FBA modes were calculated for each objective flux by allowing the oxygen and nitrate uptake rates to be either zero or maximal.
+For aerobic metabolism, the specific oxygen and nitrate uptake rates were constrained to allow a maximum flux of 10 mM/gDW$\cdot$hr and 0.05 mM/gDW$\cdot$hr, respectively.
 Each flux vector was normalized by the growth flux, or by the specified objective flux.
 
-\subsubsection*{Sensitivity Analysis}
-The variance based sensitivity analysis\cite{2010_saltelli} was done using SALib, an open source Python library. The sensitivity analysis identified key parameters that were influential on our specified model output of biomass yield. All model parameters used in the Sobol sensitivity analysis varied between 50\% lower and higher than the optimal values obtained from parameter identification, except enzyme initital conditions which varied between 0 and 1. The sample space was set to 1000 and 182,000 parameter sets were generated from the pseudo-random Sobol sequence.
+\subsubsection*{Global Sensitivity Analysis}
+Variance based sensitivity analysis was used to estimate which FBA modes were critical to model performance \cite{2010_saltelli}.
+The performance function used in this study was the biomass yield on substrate.
+Candidate parameter sets (N = 182,000) were generated using Sobol sampling by perturbing the best fit parameter set $\pm50\%$ [REF].
+Model performance, calculated for each of these parameter sets, was then used to estimate the total-order sensitivity coefficient for each model parameter.
 
 \subsubsection*{Estimation of model parameters}
 Model parameters were estimated by minimizing the difference between simulations and experimental measurements (squared residual):
@@ -233,10 +219,10 @@ Model parameters were estimated by minimizing the difference between simulations
 \begin{equation}\label{eqn:objective-function}
 	\min_{\mathbf{k}} \sum_{\tau=1}^{\mathcal{T}}\sum_{j=1}^{\mathcal{S}}\left(\frac{\hat{x}_{j}\left(\tau\right) - x_{j}\left(\tau,\mathbf{k}\right)}{\omega_{j}\left(\tau\right)}\right)^{2}
 \end{equation}
-
 where $\hat{x}_{j}\left(\tau\right)$ denotes the measured value of species $j$ at time $\tau$, $x_{j}\left(\tau,\mathbf{k}\right)$ denotes the simulated
 value for species $j$ at time $\tau$, and $\omega_{j}\left(\tau\right)$ denotes the experimental measurement variance for species $j$ at time $\tau$.
-The outer summation is with respect to time, while the inner summation is with respect to state. We minimized the model residual using simulated annealing.
+The outer summation is with respect to time, while the inner summation is with respect to state. The model residual was minimized using the simulated annealing routine
+in the JuMP package [REF].
 
 % References -
 \bibliographystyle{naturemag_noURL}
