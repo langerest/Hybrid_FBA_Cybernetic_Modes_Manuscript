@@ -106,12 +106,11 @@ Next, we tested the ability of HCM FBA to replicate experimental data.
 %Thus, HCM EM may not be possible for large networks, but HCM FBA will not suffer from this shortcoming.
 %In the case, we demonstrated that HCM FBA is applicable for larger metabolic networks where elementary mode calculations increase exponentially.
 
-The performance of HCM FBA was equivalent to HCM EM for a small model of anaerobic \textit{E. coli} metabolism (Fig. \ref{fig:ecoli}, left).
+The performance of HCM FBA was equivalent to HCM EM for anaerobic \textit{E. coli} metabolism (Fig. \ref{fig:ecoli}, left).
 The anaerobic \textit{E. coli} network, consisting of 12 reactions and 19 metabolites, generated nine elementary and seven FBA modes.
 HCM EM cellmass, glucose and fermentation product trajectories were generated
-using these elementary modes and kinetic parameters reported by Kim et al. \cite{2008_kim_varner_ramkrishna_BiotechProg},
-where the experimental data was taken from ZZZ et al. [REFHERE] (Fig. \ref{fig:ecoli}A, dashed).
-We estimated the HCM FBA model parameters from the experimental measurements using simulated annealing.
+using these elementary modes and kinetic parameters reported by Kim et al. \cite{2008_kim_varner_ramkrishna_BiotechProg} (Fig. \ref{fig:ecoli}A, dashed).
+We estimated the HCM FBA model parameters from the experimental data set taken from Kim et al.  \cite{2008_kim_varner_ramkrishna_BiotechProg} using simulated annealing.
 Overall, HCM FBA performed only 5\% worse than HCM EM (Fig. \ref {fig:ecoli}A, solid), despite having two fewer modes and four fewer parameters (17 versus 21 parameters).
 Taken together, these results suggested HCM FBA is an alternative to HCM EM even for cases when elementary modes can be easily calculated.
 
