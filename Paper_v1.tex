@@ -113,7 +113,7 @@ using the kinetic parameters reported by Kim et al. \cite{2008_kim_varner_ramkri
 On the other hand, HCM FBA model parameters were estimated in this study from the Kim et al. data set using simulated annealing.
 Overall, HCM FBA performed within 5\% of HCM EM (on a residual standard error basis) for the anaerobic \textit{E. coli} data (Fig. \ref {fig:ecoli}A, solid),
 despite having two fewer modes and four fewer parameters (17 versus 21 parameters).
-Taken together, while both HCM EM and HCM FBA described experimental data, HCM FBA had fewer parameters and modes.
+Thus, while both HCM EM and HCM FBA described the experimental data, HCM FBA did so with fewer modes and parameters.
 
 \begin{figure}[!t]\centering
 \includegraphics[width=0.48\textwidth]{./figs/Fig-2-Ecoli-SimulationResults.pdf}
@@ -127,15 +127,15 @@ Elementary mode decomposition of this network (and thus HCM EM) was not feasible
 Conversely, flux balance analysis generated only 29 modes for the same network.
 HCM FBA model parameters were estimated from cellmass, glucose and acetate measurements \cite{1994_varma_palsson_ApplEnvMicro} using simulated annealing (Fig. \ref{fig:ecoli}B, solid).
 HCM FBA captured glucose consumption, cellmass formation and the switch to acetate consumption following glucose exhaustion.
-Taken together, HCM FBA described the dynamics of a network that was infeasible for HCM EM, thereby demonstrating the power of the approach for large networks.
-Next, we considered a systematic approach to identify the critical subset of FBA modes required for model performance.
+Thus, HCM FBA described the dynamics of a network that was infeasible for HCM EM, thereby demonstrating the power of the approach for large networks.
+Next, we demonstrated a systematic strategy to identify the critical subset of FBA modes required for model performance.
 
 Global sensitivity analysis identified the FBA modes essential to model performance (Fig. \ref{fig:sensitivity}).
 Total order sensitivity coefficients were calculated for all kinetic parameters and enzyme initial conditions in the aerobic \textit{E. coli} model.
 Five of the 29 FBA modes were significant;
 removal of the most significant of these modes (encoding aerobic growth on glucose) destroyed model performance (Fig. \ref{fig:ecoli}B, dotted).
-Conversely, removal of the remaining 24 modes had a negligible effect upon model performance (Fig. \ref{fig:ecoli}B, dashed).
-Taken together, sensitivity analysis identified the minimal model structure required to explain the experimental data.
+Conversely, removing the remaining 24 modes had a negligible effect upon model performance (Fig. \ref{fig:ecoli}B, dashed).
+Thus, sensitivity analysis identified the minimal model structure required to explain the experimental data.
 
 \begin{figure*}[!t]\centering
 \includegraphics[width=0.80\textwidth]{./figs/Fig-3-Sensitivity-Results.pdf}
