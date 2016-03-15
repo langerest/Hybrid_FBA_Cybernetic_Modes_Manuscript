@@ -5,11 +5,6 @@
 \providecommand{\bibinfo}[2]{#2}
 \providecommand{\eprint}[2][]{\url{#2}}
 
-\bibitem{shuler_book}
-\bibinfo{author}{Shuler, M.} \& \bibinfo{author}{Kargi, F.}
-\newblock \emph{\bibinfo{title}{Bioprocess Engineering: Basic Concepts}}
-  (\bibinfo{publisher}{Prentice Hall}, \bibinfo{year}{2007}).
-
 \bibitem{2006_vonKamp_Metatool}
 \bibinfo{author}{Kamp, A.} \& \bibinfo{author}{Schuster, S.}
 \newblock \bibinfo{title}{Metatool 5.0: fast and flexible elementary modes
@@ -93,12 +88,11 @@
   \bibinfo{address}{New York, NY, USA}, \bibinfo{year}{2006}).
 
 \bibitem{Julia}
-\bibinfo{author}{Bezanson, J.}, \bibinfo{author}{Karpinski, S.},
-  \bibinfo{author}{Shah, V.~B.} \& \bibinfo{author}{Edelman, A.}
-\newblock \bibinfo{title}{Julia: {A} fast dynamic language for technical
-  computing}.
-\newblock \emph{\bibinfo{journal}{CoRR}}
-  \textbf{\bibinfo{volume}{abs/1209.5145}} (\bibinfo{year}{2012}).
+\bibinfo{author}{Bezanson, J.}, \bibinfo{author}{Edelman, A.},
+  \bibinfo{author}{Karpinski, S.} \& \bibinfo{author}{Shah, V.~B.}
+\newblock \bibinfo{title}{{J}ulia: A fresh approach to numerical computing}
+  (\bibinfo{year}{2014}).
+\newblock arXiv:\eprint{1411.1607}.
 
 \bibitem{Sundials}
 \bibinfo{author}{Hindmarsh, A.~C.} \emph{et~al.}

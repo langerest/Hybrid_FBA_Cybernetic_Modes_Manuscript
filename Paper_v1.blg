@@ -3,57 +3,51 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: Paper_v1.aux
 The style file: naturemag_noURL.bst
 Database file #1: Paper_v1.bib
-You're missing a field part---line 110 of file Paper_v1.bib
- :   month        = 
- :                  ,
-I'm skipping whatever remains of this entry
-You're missing a field part---line 210 of file Paper_v1.bib
- :   volume    = 
- :               ,
-I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "shuler_book"
+Warning--empty journal in Julia
 Warning--empty journal in GLPK
 Warning--empty year in GLPK
 Warning--empty journal in SALib
 Warning--empty year in SALib
-You've used 15 entries,
+You've used 14 entries,
             2344 wiz_defined-function locations,
-            1091 strings with 11873 characters,
-and the built_in function-call counts, 5405 in all, are:
-= -- 368
-> -- 140
+            1087 strings with 11760 characters,
+and the built_in function-call counts, 5092 in all, are:
+= -- 349
+> -- 132
 < -- 0
-+ -- 70
-- -- 35
-* -- 670
-:= -- 606
-add.period$ -- 41
-call.type$ -- 15
++ -- 66
+- -- 33
+* -- 632
+:= -- 576
+add.period$ -- 39
+call.type$ -- 14
 change.case$ -- 13
 chr.to.int$ -- 0
 cite$ -- 19
-duplicate$ -- 484
-empty$ -- 498
-format.name$ -- 47
-if$ -- 1071
+duplicate$ -- 454
+empty$ -- 460
+format.name$ -- 44
+if$ -- 1001
 int.to.chr$ -- 0
-int.to.str$ -- 15
-missing$ -- 118
-newline$ -- 79
-num.names$ -- 15
-pop$ -- 100
+int.to.str$ -- 14
+missing$ -- 110
+newline$ -- 75
+num.names$ -- 14
+pop$ -- 96
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 89
+skip$ -- 81
 stack$ -- 0
 substring$ -- 232
-swap$ -- 472
+swap$ -- 440
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 4
-while$ -- 28
-width$ -- 17
-write$ -- 158
-(There were 2 error messages)
+warning$ -- 5
+while$ -- 27
+width$ -- 16
+write$ -- 149
+(There were 6 warnings)
