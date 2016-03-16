@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  15 MAR 2016 14:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  16 MAR 2016 11:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -390,15 +390,12 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 37.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-
-LaTeX Warning: Citation `shuler_book' on page 1 undefined on input line 59.
-
 <./figs/Fig-1-GeneralModel-Results.pdf, id=1, 420.57124pt x 555.07375pt>
 File: ./figs/Fig-1-GeneralModel-Results.pdf Graphic file (type pdf)
 
 <use ./figs/Fig-1-GeneralModel-Results.pdf>
 Package pdftex.def Info: ./figs/Fig-1-GeneralModel-Results.pdf used on input li
-ne 83.
+ne 95.
 (pdftex.def)             Requested size: 206.39685pt x 272.40352pt.
  [1{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
@@ -409,10 +406,10 @@ File: ./figs/Fig-2-Ecoli-SimulationResults.pdf Graphic file (type pdf)
 
 <use ./figs/Fig-2-Ecoli-SimulationResults.pdf>
 Package pdftex.def Info: ./figs/Fig-2-Ecoli-SimulationResults.pdf used on input
- line 119.
+ line 134.
 (pdftex.def)             Requested size: 247.6778pt x 245.44319pt.
 
-Underfull \vbox (badness 2503) has occurred while \output is active []
+Underfull \vbox (badness 1577) has occurred while \output is active []
 
 
 <./figs/Fig-3-Sensitivity-Results.pdf, id=13, 774.895pt x 419.5675pt>
@@ -420,54 +417,50 @@ File: ./figs/Fig-3-Sensitivity-Results.pdf Graphic file (type pdf)
 
 <use ./figs/Fig-3-Sensitivity-Results.pdf>
 Package pdftex.def Info: ./figs/Fig-3-Sensitivity-Results.pdf used on input lin
-e 141.
+e 161.
 (pdftex.def)             Requested size: 412.80157pt x 223.51569pt.
  [2 <./figs/Fig-1-GeneralModel-Results.pdf> <./figs/Fig-2-Ecoli-SimulationResul
 ts.pdf>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [3 <./figs/Fig-3-Sensitivity-Results.pdf>] (./Paper_v1.bbl
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 95.
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 87.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 ))
 
 AED: lastpage setting LastPage
-[4] (./Paper_v1.aux)
-
-LaTeX Warning: There were undefined references.
-
- ) 
+[4] (./Paper_v1.aux) ) 
 Here is how much of TeX's memory you used:
- 4802 strings out of 493089
- 75487 string characters out of 6134842
+ 4800 strings out of 493089
+ 75468 string characters out of 6134842
  149770 words of memory out of 5000000
- 8199 multiletter control sequences out of 15000+600000
- 48848 words of font info for 110 fonts, out of 8000000 for 9000
+ 8198 multiletter control sequences out of 15000+600000
+ 47741 words of font info for 109 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,12n,43p,832b,276s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
-exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/te
-xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/local/texl
-ive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texli
-ve/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texliv
-e/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/
-2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/20
-15/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2015
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/local/texlive/2015
-/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib7.pfb></usr/local/texlive/
-2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/20
-15/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2015/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2015/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2015/texmf
--dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2015/texmf-dist/fo
-nts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/
-urw/times/utmbi8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times
-/utmr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmri8a.p
-fb>
-Output written on Paper_v1.pdf (4 pages, 785701 bytes).
+ 38i,12n,43p,794b,276s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/
+8r.enc}</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx1
+0.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.
+pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.p
+fb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pf
+b></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb>
+</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></
+usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></us
+r/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></us
+r/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib7.pfb>
+</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></
+usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr
+/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/
+local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/lo
+cal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/loca
+l/texlive/2015/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texliv
+e/2015/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2015/tex
+mf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2015/texmf-dist/f
+onts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1
+/urw/times/utmri8a.pfb>
+Output written on Paper_v1.pdf (4 pages, 785463 bytes).
 PDF statistics:
  339 PDF objects out of 1000 (max. 8388607)
  255 compressed objects within 3 object streams

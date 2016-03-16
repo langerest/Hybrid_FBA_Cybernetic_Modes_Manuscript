@@ -5,14 +5,6 @@
 \providecommand{\bibinfo}[2]{#2}
 \providecommand{\eprint}[2][]{\url{#2}}
 
-\bibitem{2006_vonKamp_Metatool}
-\bibinfo{author}{Kamp, A.} \& \bibinfo{author}{Schuster, S.}
-\newblock \bibinfo{title}{Metatool 5.0: fast and flexible elementary modes
-  analysis}.
-\newblock \emph{\bibinfo{journal}{Bioinformatics}}
-  \textbf{\bibinfo{volume}{22}}, \bibinfo{pages}{1930--1931}
-  (\bibinfo{year}{2006}).
-
 \bibitem{2010_orth_NatBiotech}
 \bibinfo{author}{Orth, J.}, \bibinfo{author}{Thiele, I.} \&
   \bibinfo{author}{Palsson, B.}
@@ -20,32 +12,6 @@
 \newblock \emph{\bibinfo{journal}{Nat. Biotechnol.}}
   \textbf{\bibinfo{volume}{28}}, \bibinfo{pages}{245--248}
   (\bibinfo{year}{2010}).
-
-\bibitem{1994_varma_palsson_ApplEnvMicro}
-\bibinfo{author}{Varma, A.} \& \bibinfo{author}{Palsson, B.}
-\newblock \bibinfo{title}{Stoichiometric flux balance models quantitatively
-  predict growth and metabolic by-product secretion in wild-type escherichia
-  coli w3110.}
-\newblock \emph{\bibinfo{journal}{Appl. Environ. Microbiol.}}
-  \textbf{\bibinfo{volume}{60}}, \bibinfo{pages}{3724--3731}
-  (\bibinfo{year}{1994}).
-
-\bibitem{2002_Mahadevan_BiophysJ}
-\bibinfo{author}{Mahadevan, R.}, \bibinfo{author}{Edwards, J.} \&
-  \bibinfo{author}{Doyle~III, F.}
-\newblock \bibinfo{title}{Dynamic flux balance analysis of diauxic growth in
-  escherichia coli}.
-\newblock \emph{\bibinfo{journal}{Biophys. J.}} \textbf{\bibinfo{volume}{83}},
-  \bibinfo{pages}{1331 -- 1340} (\bibinfo{year}{2002}).
-
-\bibitem{2008_kim_varner_ramkrishna_BiotechProg}
-\bibinfo{author}{Kim, J.}, \bibinfo{author}{Varner, J.} \&
-  \bibinfo{author}{Ramkrishna, D.}
-\newblock \bibinfo{title}{A hybrid model of anaerobic e. coli gjt001:
-  Combination of elementary flux modes and cybernetic variables}.
-\newblock \emph{\bibinfo{journal}{Biotechnol. Prog.}}
-  \textbf{\bibinfo{volume}{24}}, \bibinfo{pages}{993--1006}
-  (\bibinfo{year}{2008}).
 
 \bibitem{2004_lee_varner_ko_ieee}
 \bibinfo{author}{Lee, L.}, \bibinfo{author}{Varner, J.} \& \bibinfo{author}{Ko,
@@ -55,6 +21,15 @@
 \newblock \emph{\bibinfo{journal}{Comput Syst Bioinformatics Conf, Int IEEE
   CS}} \textbf{\bibinfo{volume}{0}}, \bibinfo{pages}{636--639}
   (\bibinfo{year}{2004}).
+
+\bibitem{2008_kim_varner_ramkrishna_BiotechProg}
+\bibinfo{author}{Kim, J.}, \bibinfo{author}{Varner, J.} \&
+  \bibinfo{author}{Ramkrishna, D.}
+\newblock \bibinfo{title}{A hybrid model of anaerobic e. coli gjt001:
+  Combination of elementary flux modes and cybernetic variables}.
+\newblock \emph{\bibinfo{journal}{Biotechnol. Prog.}}
+  \textbf{\bibinfo{volume}{24}}, \bibinfo{pages}{993--1006}
+  (\bibinfo{year}{2008}).
 
 \bibitem{2001_covert_schilling_palsson}
 \bibinfo{author}{Covert, M.}, \bibinfo{author}{Schilling, C.} \&
@@ -73,6 +48,15 @@
   \textbf{\bibinfo{volume}{108}}, \bibinfo{pages}{127--140}
   (\bibinfo{year}{2011}).
 
+\bibitem{1994_varma_palsson_ApplEnvMicro}
+\bibinfo{author}{Varma, A.} \& \bibinfo{author}{Palsson, B.}
+\newblock \bibinfo{title}{Stoichiometric flux balance models quantitatively
+  predict growth and metabolic by-product secretion in wild-type escherichia
+  coli w3110.}
+\newblock \emph{\bibinfo{journal}{Appl. Environ. Microbiol.}}
+  \textbf{\bibinfo{volume}{60}}, \bibinfo{pages}{3724--3731}
+  (\bibinfo{year}{1994}).
+
 \bibitem{2007_schuetz_etal_MolSysBio}
 \bibinfo{author}{Schuetz, R.}, \bibinfo{author}{Kuepfer, L.} \&
   \bibinfo{author}{Sauer, U.}
@@ -86,6 +70,14 @@
 \newblock \emph{\bibinfo{title}{Systems Biology: Properties of Reconstructed
   Networks}} (\bibinfo{publisher}{Cambridge University Press},
   \bibinfo{address}{New York, NY, USA}, \bibinfo{year}{2006}).
+
+\bibitem{2002_Mahadevan_BiophysJ}
+\bibinfo{author}{Mahadevan, R.}, \bibinfo{author}{Edwards, J.} \&
+  \bibinfo{author}{Doyle~III, F.}
+\newblock \bibinfo{title}{Dynamic flux balance analysis of diauxic growth in
+  escherichia coli}.
+\newblock \emph{\bibinfo{journal}{Biophys. J.}} \textbf{\bibinfo{volume}{83}},
+  \bibinfo{pages}{1331 -- 1340} (\bibinfo{year}{2002}).
 
 \bibitem{Julia}
 \bibinfo{author}{Bezanson, J.}, \bibinfo{author}{Edelman, A.},
@@ -101,6 +93,14 @@
 \newblock \emph{\bibinfo{journal}{ACM Trans. Math. Softw.}}
   \textbf{\bibinfo{volume}{31}}, \bibinfo{pages}{363--396}
   (\bibinfo{year}{2005}).
+
+\bibitem{2006_vonKamp_Metatool}
+\bibinfo{author}{Kamp, A.} \& \bibinfo{author}{Schuster, S.}
+\newblock \bibinfo{title}{Metatool 5.0: fast and flexible elementary modes
+  analysis}.
+\newblock \emph{\bibinfo{journal}{Bioinformatics}}
+  \textbf{\bibinfo{volume}{22}}, \bibinfo{pages}{1930--1931}
+  (\bibinfo{year}{2006}).
 
 \bibitem{GLPK}
 \bibinfo{author}{Makhorin, A.}
