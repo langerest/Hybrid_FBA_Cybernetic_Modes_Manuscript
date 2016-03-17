@@ -103,9 +103,9 @@
   (\bibinfo{year}{2006}).
 
 \bibitem{GLPK}
-\bibinfo{author}{Makhorin, A.}
-\newblock \bibinfo{title}{Glpk (gnu linear programming kit). available online:
-  https://www.gnu.org/software/glpk/} .
+\bibinfo{title}{{GNU Linear Programming Kit, Version 4.52}}
+  (\bibinfo{year}{2016}).
+\newblock \urlprefix\url{http://www.gnu.org/software/glpk/glpk.html}.
 
 \bibitem{SALib}
 \bibinfo{author}{Herman, J.}

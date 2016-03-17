@@ -3,50 +3,50 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: Paper_v1.aux
 The style file: naturemag_noURL.bst
 Database file #1: Paper_v1.bib
+Warning--entry type for "GLPK" isn't style-file defined
+--line 132 of file Paper_v1.bib
 Warning--empty journal in Julia
-Warning--empty journal in GLPK
-Warning--empty year in GLPK
 Warning--empty journal in SALib
 Warning--empty year in SALib
 You've used 14 entries,
             2344 wiz_defined-function locations,
-            1086 strings with 11749 characters,
-and the built_in function-call counts, 5092 in all, are:
-= -- 349
-> -- 132
+            1088 strings with 11744 characters,
+and the built_in function-call counts, 5071 in all, are:
+= -- 351
+> -- 129
 < -- 0
-+ -- 66
-- -- 33
-* -- 632
-:= -- 576
++ -- 65
+- -- 32
+* -- 629
+:= -- 566
 add.period$ -- 39
 call.type$ -- 14
 change.case$ -- 13
 chr.to.int$ -- 0
-cite$ -- 19
-duplicate$ -- 454
-empty$ -- 460
-format.name$ -- 44
-if$ -- 1001
+cite$ -- 17
+duplicate$ -- 448
+empty$ -- 465
+format.name$ -- 43
+if$ -- 1005
 int.to.chr$ -- 0
 int.to.str$ -- 14
-missing$ -- 110
+missing$ -- 108
 newline$ -- 75
-num.names$ -- 14
-pop$ -- 96
+num.names$ -- 13
+pop$ -- 94
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 81
+skip$ -- 82
 stack$ -- 0
 substring$ -- 232
-swap$ -- 440
+swap$ -- 441
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 5
-while$ -- 27
+warning$ -- 3
+while$ -- 26
 width$ -- 16
-write$ -- 149
-(There were 5 warnings)
+write$ -- 150
+(There were 4 warnings)
