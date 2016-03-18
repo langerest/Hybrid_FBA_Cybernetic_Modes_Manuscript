@@ -13,6 +13,16 @@
   \textbf{\bibinfo{volume}{28}}, \bibinfo{pages}{245--248}
   (\bibinfo{year}{2010}).
 
+\bibitem{Schilling:2000aa}
+\bibinfo{author}{Schilling, C.~H.}, \bibinfo{author}{Letscher, D.} \&
+  \bibinfo{author}{Palsson, B.~O.}
+\newblock \bibinfo{title}{Theory for the systemic definition of metabolic
+  pathways and their use in interpreting metabolic function from a
+  pathway-oriented perspective}.
+\newblock \emph{\bibinfo{journal}{J Theor Biol}}
+  \textbf{\bibinfo{volume}{203}}, \bibinfo{pages}{229--48}
+  (\bibinfo{year}{2000}).
+
 \bibitem{2004_lee_varner_ko_ieee}
 \bibinfo{author}{Lee, L.}, \bibinfo{author}{Varner, J.} \& \bibinfo{author}{Ko,
   K.}
@@ -21,6 +31,32 @@
 \newblock \emph{\bibinfo{journal}{Comput Syst Bioinformatics Conf, Int IEEE
   CS}} \textbf{\bibinfo{volume}{0}}, \bibinfo{pages}{636--639}
   (\bibinfo{year}{2004}).
+
+\bibitem{1986_kompala_ramkrishna_tsao_BiotechBioeng}
+\bibinfo{author}{Kompala, D.~S.}, \bibinfo{author}{Ramkrishna, D.},
+  \bibinfo{author}{Jansen, N.~B.} \& \bibinfo{author}{Tsao, G.~T.}
+\newblock \bibinfo{title}{Investigation of bacterial growth on mixed
+  substrates: experimental evaluation of cybernetic models}.
+\newblock \emph{\bibinfo{journal}{Biotechnol Bioeng}}
+  \textbf{\bibinfo{volume}{28}}, \bibinfo{pages}{1044--55}
+  (\bibinfo{year}{1986}).
+
+\bibitem{2012_kim_ramkrishna_BiotechProg}
+\bibinfo{author}{Kim, J.~I.}, \bibinfo{author}{Song, H.-S.},
+  \bibinfo{author}{Sunkara, S.~R.}, \bibinfo{author}{Lali, A.} \&
+  \bibinfo{author}{Ramkrishna, D.}
+\newblock \bibinfo{title}{Exacting predictions by cybernetic model confirmed
+  experimentally: steady state multiplicity in the chemostat}.
+\newblock \emph{\bibinfo{journal}{Biotechnol Prog}}
+  \textbf{\bibinfo{volume}{28}}, \bibinfo{pages}{1160--6}
+  (\bibinfo{year}{2012}).
+
+\bibitem{1999_varner_ramkrishna_MetaEng}
+\bibinfo{author}{Varner, J.} \& \bibinfo{author}{Ramkrishna, D.}
+\newblock \bibinfo{title}{Metabolic engineering from a cybernetic perspective:
+  aspartate family of amino acids}.
+\newblock \emph{\bibinfo{journal}{Metab Eng}} \textbf{\bibinfo{volume}{1}},
+  \bibinfo{pages}{88--116} (\bibinfo{year}{1999}).
 
 \bibitem{2008_kim_varner_ramkrishna_BiotechProg}
 \bibinfo{author}{Kim, J.}, \bibinfo{author}{Varner, J.} \&
