@@ -13,6 +13,15 @@
   \textbf{\bibinfo{volume}{28}}, \bibinfo{pages}{245--248}
   (\bibinfo{year}{2010}).
 
+\bibitem{Schuster:2000aa}
+\bibinfo{author}{Schuster, S.}, \bibinfo{author}{Fell, D.~A.} \&
+  \bibinfo{author}{Dandekar, T.}
+\newblock \bibinfo{title}{A general definition of metabolic pathways useful for
+  systematic organization and analysis of complex metabolic networks}.
+\newblock \emph{\bibinfo{journal}{Nat Biotechnol}}
+  \textbf{\bibinfo{volume}{18}}, \bibinfo{pages}{326--32}
+  (\bibinfo{year}{2000}).
+
 \bibitem{Schilling:2000aa}
 \bibinfo{author}{Schilling, C.~H.}, \bibinfo{author}{Letscher, D.} \&
   \bibinfo{author}{Palsson, B.~O.}
@@ -23,6 +32,24 @@
   \textbf{\bibinfo{volume}{203}}, \bibinfo{pages}{229--48}
   (\bibinfo{year}{2000}).
 
+\bibitem{Covert:2004aa}
+\bibinfo{author}{Covert, M.~W.}, \bibinfo{author}{Knight, E.~M.},
+  \bibinfo{author}{Reed, J.~L.}, \bibinfo{author}{Herrgard, M.~J.} \&
+  \bibinfo{author}{Palsson, B.~O.}
+\newblock \bibinfo{title}{Integrating high-throughput and computational data
+  elucidates bacterial networks}.
+\newblock \emph{\bibinfo{journal}{Nature}} \textbf{\bibinfo{volume}{429}},
+  \bibinfo{pages}{92--6} (\bibinfo{year}{2004}).
+
+\bibitem{Wiback:2003aa}
+\bibinfo{author}{Wiback, S.~J.}, \bibinfo{author}{Mahadevan, R.} \&
+  \bibinfo{author}{Palsson, B.~{\O}.}
+\newblock \bibinfo{title}{Reconstructing metabolic flux vectors from extreme
+  pathways: defining the alpha-spectrum}.
+\newblock \emph{\bibinfo{journal}{J Theor Biol}}
+  \textbf{\bibinfo{volume}{224}}, \bibinfo{pages}{313--24}
+  (\bibinfo{year}{2003}).
+
 \bibitem{2004_lee_varner_ko_ieee}
 \bibinfo{author}{Lee, L.}, \bibinfo{author}{Varner, J.} \& \bibinfo{author}{Ko,
   K.}
@@ -32,14 +59,19 @@
   CS}} \textbf{\bibinfo{volume}{0}}, \bibinfo{pages}{636--639}
   (\bibinfo{year}{2004}).
 
-\bibitem{1986_kompala_ramkrishna_tsao_BiotechBioeng}
-\bibinfo{author}{Kompala, D.~S.}, \bibinfo{author}{Ramkrishna, D.},
-  \bibinfo{author}{Jansen, N.~B.} \& \bibinfo{author}{Tsao, G.~T.}
-\newblock \bibinfo{title}{Investigation of bacterial growth on mixed
-  substrates: experimental evaluation of cybernetic models}.
-\newblock \emph{\bibinfo{journal}{Biotechnol Bioeng}}
-  \textbf{\bibinfo{volume}{28}}, \bibinfo{pages}{1044--55}
-  (\bibinfo{year}{1986}).
+\bibitem{1999_varner_ramkrishna_MetaEng}
+\bibinfo{author}{Varner, J.} \& \bibinfo{author}{Ramkrishna, D.}
+\newblock \bibinfo{title}{Metabolic engineering from a cybernetic perspective:
+  aspartate family of amino acids}.
+\newblock \emph{\bibinfo{journal}{Metab Eng}} \textbf{\bibinfo{volume}{1}},
+  \bibinfo{pages}{88--116} (\bibinfo{year}{1999}).
+
+\bibitem{Song:2012aa}
+\bibinfo{author}{Song, H.-S.} \& \bibinfo{author}{Ramkrishna, D.}
+\newblock \bibinfo{title}{Prediction of dynamic behavior of mutant strains from
+  limited wild-type data}.
+\newblock \emph{\bibinfo{journal}{Metab Eng}} \textbf{\bibinfo{volume}{14}},
+  \bibinfo{pages}{69--80} (\bibinfo{year}{2012}).
 
 \bibitem{2012_kim_ramkrishna_BiotechProg}
 \bibinfo{author}{Kim, J.~I.}, \bibinfo{author}{Song, H.-S.},
@@ -51,12 +83,22 @@
   \textbf{\bibinfo{volume}{28}}, \bibinfo{pages}{1160--6}
   (\bibinfo{year}{2012}).
 
-\bibitem{1999_varner_ramkrishna_MetaEng}
-\bibinfo{author}{Varner, J.} \& \bibinfo{author}{Ramkrishna, D.}
-\newblock \bibinfo{title}{Metabolic engineering from a cybernetic perspective:
-  aspartate family of amino acids}.
-\newblock \emph{\bibinfo{journal}{Metab Eng}} \textbf{\bibinfo{volume}{1}},
-  \bibinfo{pages}{88--116} (\bibinfo{year}{1999}).
+\bibitem{Song:2011aa}
+\bibinfo{author}{Song, H.-S.} \& \bibinfo{author}{Ramkrishna, D.}
+\newblock \bibinfo{title}{Cybernetic models based on lumped elementary modes
+  accurately predict strain-specific metabolic function}.
+\newblock \emph{\bibinfo{journal}{Biotechnol Bioeng}}
+  \textbf{\bibinfo{volume}{108}}, \bibinfo{pages}{127--40}
+  (\bibinfo{year}{2011}).
+
+\bibitem{Gadkar:2003aa}
+\bibinfo{author}{Gadkar, K.~G.}, \bibinfo{author}{Doyle, F.~J., 3rd},
+  \bibinfo{author}{Crowley, T.~J.} \& \bibinfo{author}{Varner, J.~D.}
+\newblock \bibinfo{title}{Cybernetic model predictive control of a continuous
+  bioreactor with cell recycle}.
+\newblock \emph{\bibinfo{journal}{Biotechnol Prog}}
+  \textbf{\bibinfo{volume}{19}}, \bibinfo{pages}{1487--97}
+  (\bibinfo{year}{2003}).
 
 \bibitem{2008_kim_varner_ramkrishna_BiotechProg}
 \bibinfo{author}{Kim, J.}, \bibinfo{author}{Varner, J.} \&
@@ -66,23 +108,6 @@
 \newblock \emph{\bibinfo{journal}{Biotechnol. Prog.}}
   \textbf{\bibinfo{volume}{24}}, \bibinfo{pages}{993--1006}
   (\bibinfo{year}{2008}).
-
-\bibitem{2001_covert_schilling_palsson}
-\bibinfo{author}{Covert, M.}, \bibinfo{author}{Schilling, C.} \&
-  \bibinfo{author}{Palsson, B.}
-\newblock \bibinfo{title}{Regulation of gene expression in flux balance models
-  of metabolism}.
-\newblock \emph{\bibinfo{journal}{J. Theor. Biol.}}
-  \textbf{\bibinfo{volume}{213}}, \bibinfo{pages}{73 -- 88}
-  (\bibinfo{year}{2001}).
-
-\bibitem{2010_song_ramkrishna}
-\bibinfo{author}{Song, H.} \& \bibinfo{author}{Ramkrishna, D.}
-\newblock \bibinfo{title}{Cybernetic models based on lumped elementary modes
-  accurately predict strain-specific metabolic function}.
-\newblock \emph{\bibinfo{journal}{Biotechnol. Bioeng.}}
-  \textbf{\bibinfo{volume}{108}}, \bibinfo{pages}{127--140}
-  (\bibinfo{year}{2011}).
 
 \bibitem{1994_varma_palsson_ApplEnvMicro}
 \bibinfo{author}{Varma, A.} \& \bibinfo{author}{Palsson, B.}
@@ -106,14 +131,6 @@
 \newblock \emph{\bibinfo{title}{Systems Biology: Properties of Reconstructed
   Networks}} (\bibinfo{publisher}{Cambridge University Press},
   \bibinfo{address}{New York, NY, USA}, \bibinfo{year}{2006}).
-
-\bibitem{2002_Mahadevan_BiophysJ}
-\bibinfo{author}{Mahadevan, R.}, \bibinfo{author}{Edwards, J.} \&
-  \bibinfo{author}{Doyle~III, F.}
-\newblock \bibinfo{title}{Dynamic flux balance analysis of diauxic growth in
-  escherichia coli}.
-\newblock \emph{\bibinfo{journal}{Biophys. J.}} \textbf{\bibinfo{volume}{83}},
-  \bibinfo{pages}{1331 -- 1340} (\bibinfo{year}{2002}).
 
 \bibitem{Julia}
 \bibinfo{author}{Bezanson, J.}, \bibinfo{author}{Edelman, A.},
