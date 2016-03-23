@@ -103,12 +103,14 @@ and a viable alternative to HCM-EM especially for large networks where the gener
 %The number of elementary modes made it impractical to model with HCM-EM, but HCM-FBA was computationally feasible and performed well with respect to experimental observations.
 
 \begin{figure}[!t]\centering
-\includegraphics[width=0.35\textwidth]{./figs/Fig-1-GeneralModel-Results.pdf}
-\caption{HCM-FBA proof of concept metabolic study.
-A: Prototypical network with six metabolites and seven reactions.
+\includegraphics[width=0.45\textwidth]{./figs/Fig-1-Method-General.pdf}
+\caption{HCM proof of concept metabolic study.
+A: HCM is formulated to split the uptake flux among different pathways (defined as modes) to satisfy some chosen metabolic objective.
+HCM-EM considers all possible modes within a network, whereas HCM-FBA combines modes by FBA.
+B: Prototypical network with six metabolites and seven reactions.
 Intracellular cellmass precursors $A,B$ and $C$ are balanced (no accumulation) while the extracellular metabolites ($A_{e},B_{e}$ and $C_{e}$) are not balanced (can accumulate).
 The oval denotes the cell boundary, $q_{j}$ is the jth flux across the boundary and $v_{k}$ denotes the kth intracellular flux.
-B: Simulation of extracellular metabolite trajectories using HCM-FBA (solid line) versus HCM-EM (points) for the proof of concept metabolic network.
+C: Simulation of extracellular metabolite trajectories using HCM-FBA (solid line) versus HCM-EM (points) for the proof of concept metabolic network.
 }\label{fig:model-fitting}
 \end{figure}
 

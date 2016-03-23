@@ -103,7 +103,7 @@ and a viable alternative to HCM-EM especially for large networks where the gener
 %The number of elementary modes made it impractical to model with HCM-EM, but HCM-FBA was computationally feasible and performed well with respect to experimental observations.
 
 \begin{figure}[!t]\centering
-\includegraphics[width=0.35\textwidth]{./figs/Fig-1-GeneralModel-Results.pdf}
+\includegraphics[width=0.45\textwidth]{./figs/Fig-1-Method-General.pdf}
 \caption{HCM-FBA proof of concept metabolic study.
 A: Prototypical network with six metabolites and seven reactions.
 Intracellular cellmass precursors $A,B$ and $C$ are balanced (no accumulation) while the extracellular metabolites ($A_{e},B_{e}$ and $C_{e}$) are not balanced (can accumulate).
@@ -195,7 +195,7 @@ Removal of these modes crippled the model, but removal of the remaining 24 modes
 Thus, HCM-FBA is a viable alternative to HCM-EM, especially for large networks where the generation of elementary modes is infeasible.
 
 Hybrid cybernetic models are formulated to split the uptake flux among different pathways (defined as modes) to satisfy some chosen metabolic objective (i.e. maximum growth or substrate uptake).
-The overall flux through each mode is determined by a kinetic uptake rate that acts as a weight for the utilization of that mode. 
+%The overall flux through each mode is determined by a kinetic uptake rate that acts as a weight for the utilization of that mode. 
 The HCM framework has been shown to predict dynamic external fluxes of cell growth, substrate utilization and byproduct formation. 
 HCM-EM has good model performance for reduced networks, but is often impractical for larger networks.
 However, Song and Ramkrishna address this shortcoming by lumping elementary modes into "families" each containing several modes with unifying characteristics based on metabolic function \cite{2010_song,Song:2011aa}.
@@ -206,7 +206,7 @@ The HCM-FBA framework is a different approach of reducing/lumping EMs, since the
 The advantage of HCM-FBA is it does not require the computational burden of calculating elementary modes.
 
 HCM-FBA provides a practical and feasible approach to model large networks where elementary modes fail.
-The disadvantage of HCM-FBA is it requires \textit{a priori} knowledge of the inputs into FBA.
+%The disadvantage of HCM-FBA is it requires \textit{a priori} knowledge of the inputs into FBA.
 FBA modes do not have the thorough information as elementary modes, but provide sufficient pathways to model experimental observations.
 HCM-EM has been shown to have comparable internal flux estimates to metabolic flux analysis results\cite{2008_kim_varner_ramkrishna_BiotechProg}, this has not been shown for HCM-FBA.
 Just as HCM-EM has been applied to \textit{S. cerevisiae}, we can apply the HCM-FBA framework to eukaryotes as long as FBA accounts for compartmentalization.
