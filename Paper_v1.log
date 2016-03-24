@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  24 MAR 2016 12:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  24 MAR 2016 12:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -421,7 +421,7 @@ e 174.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [3 <./figs/Fig-3-Sensitivity-Results.pdf>]
-Underfull \hbox (badness 1377) in paragraph at lines 270--273
+Underfull \hbox (badness 1377) in paragraph at lines 271--274
 \OT1/ptm/m/n/10 code for each case study is avail-able for down-load at
  []
 
@@ -466,7 +466,7 @@ e/2015/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2015/tex
 mf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2015/texmf-dist/f
 onts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1
 /urw/times/utmri8a.pfb>
-Output written on Paper_v1.pdf (4 pages, 829858 bytes).
+Output written on Paper_v1.pdf (4 pages, 829843 bytes).
 PDF statistics:
  343 PDF objects out of 1000 (max. 8388607)
  257 compressed objects within 3 object streams

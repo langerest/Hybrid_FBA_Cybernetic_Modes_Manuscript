@@ -199,14 +199,15 @@ Thus, HCM-FBA is an alternative approach to HCM-EM, especially for large network
 We have shown that HCM-FBA is an alternative approach to model large metabolic networks where elementary modes calculations are infeasible.
 However, there are additional studies that should be performed to further test the HCM-FBA approach.
 First, the intracellular flux distribution predicted by HCM-FBA should be compared to HCM-EM, and to flux measurements calculated using metabolic flux analysis or flux balance analysis in combination with carbon labeling.
-HCM-EM has comparable internal flux estimates compared to metabolic flux analysis results \cite{2008_kim_varner_ramkrishna_BiotechProg}.
-Next, we should compare the performance of HCM-FBA to lumped hybrid cybernetic models (L-HCM).
+HCM-EM had predicted intracellular fluxes that were similar to metabolic flux analysis results \cite{2008_kim_varner_ramkrishna_BiotechProg}.
+Next, the performance of HCM-FBA to lumped hybrid cybernetic models (L-HCM) should be compared.
 L-HCMs, which combine elementary modes into mode families based upon metabolic function \cite{2010_song,Song:2011aa},
-has been applied to an \textit{E. coli} network with 67 reactions and a \textit{Saccharomyces cerevisiae} network (excluding compartmentalization) with 53 reactions;
+have been applied to an \textit{E. coli} network with 67 reactions and a \textit{Saccharomyces cerevisiae} network (excluding compartmentalization) with 53 reactions;
 both cases had satisfactory fits to extracellular experimental data.
-However, while L-HCM reduces the dimension of modes participating in the optimal decision, it still requires the calculation of modes which for networks of even moderate size is not possible.
+However, while L-HCM reduces the dimension of possible alternative modes that must be considered, it still requires the calculation of initial set of modes.
+For metabolic networks of even moderate size this may not possible.
 On the other had, the generation of flux balance solutions (which are convex combinations of the elementary modes) is trivial, even for genome scale metabolic networks.
-Thus, HCM-FBA opens up the possibility of manageable dynamic genome scale models of bacterial and perhaps even mammalian systems.
+Thus, HCM-FBA opens up the possibility of dynamic genome scale models of bacterial and perhaps even mammalian metabolism.
 
 %Hybrid cybernetic models are formulated to split the uptake flux among different pathways (defined as modes) to satisfy some chosen metabolic objective (i.e. maximum growth or substrate uptake).
 %The overall flux through each mode is determined by a kinetic uptake rate that acts as a weight for the utilization of that mode.
@@ -295,7 +296,7 @@ The flux balance analysis problem was solved using the GNU Linear Programming Ki
 For each FBA mode, the objective was to maximize either the specific growth rate, or the specific rate of byproduct formation.
 Multiple FBA modes were calculated for each objective flux by allowing the oxygen and nitrate uptake rates to vary.
 For aerobic metabolism, the specific oxygen and nitrate uptake rates were constrained to allow a maximum flux of 10 mM/gDW$\cdot$hr and 0.05 mM/gDW$\cdot$hr, respectively.
-Each flux vector was normalized by the specified objective flux.
+Each FBA mode was normalized by the specified objective flux.
 
 \subsubsection*{Global sensitivity analysis}
 Variance based sensitivity analysis was used to estimate which FBA modes were critical to model performance.
