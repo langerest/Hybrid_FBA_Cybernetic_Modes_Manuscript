@@ -139,7 +139,7 @@ Next, we tested the ability of HCM-FBA to replicate experimental data.
 %In the case, we demonstrated that HCM-FBA is applicable for larger metabolic networks where elementary mode calculations increase exponentially.
 
 The performance of HCM-FBA was equivalent to HCM-EM for anaerobic \textit{E. coli} metabolism (Fig. \ref{fig:ecoli}A).
-We constructed an anaerobic \textit{E. coli} network, consisting of 12 reactions and 19 metabolites, which generated 7 FBA modes and 9 EMs.
+We constructed an anaerobic \textit{E. coli} network \cite{2008_kim_varner_ramkrishna_BiotechProg}, consisting of 12 reactions and 19 metabolites, which generated 7 FBA modes and 9 EMs.
 HCM-EM reproduced cellmass, glucose, and byproduct trajectories using the kinetic parameters reported by Kim \textit{et al.} \cite{2008_kim_varner_ramkrishna_BiotechProg} (Fig. \ref{fig:ecoli}A, points versus dashed).
 HCM-FBA model parameters were estimated in this study from the Kim \textit{et al.} data set using simulated annealing.
 Overall, HCM-FBA performed within 5\% of HCM-EM (on a residual standard error basis) for the anaerobic \textit{E. coli} data (Fig. \ref {fig:ecoli}A, solid),
@@ -191,7 +191,7 @@ HCM-FBA uses flux balance analysis solutions (instead of elementary modes) in co
 We studied the performance of HCM-FBA on a prototypical metabolic network, along with two \emph{E. coli} networks.
 First, we showed that the performance of HCM-FBA and HCM-EM were comparable for the prototypical network and a small model of anaerobic \textit{E. coli} metabolism.
 For the anaerobic case, both approaches described the experimental data.
-However HCM-FBA (which was within 5\% of HCM-EM and slightly better than HCM-EM for lactate secretion) had fewer modes and parameters.
+However, HCM-FBA (which was within 5\% of HCM-EM and slightly better than HCM-EM for lactate secretion) had fewer modes and parameters.
 Next, HCM-FBA was applied to an aerobic \textit{E. coli} metabolic network that was not feasible for HCM-EM.
 Elementary mode decomposition of the aerobic network generated over 153,000 elementary modes.
 Conversely, the HCM-FBA approach described cellmass growth and the shift from glucose to acetate consumption with only 29 FBA modes.
@@ -202,7 +202,7 @@ Thus, HCM-FBA is an alternative approach to HCM-EM, especially for large network
 HCM-FBA is a promising approach to model large metabolic networks where elementary modes calculations are infeasible.
 However, there are additional studies that should be performed.
 First, the intracellular flux distribution predicted by HCM-FBA should be compared to HCM-EM and to flux measurements calculated using MFA or FBA in combination with carbon labeling.
-HCM-EM predicted intracellular fluxes that were similar to MFA results \cite{2008_kim_varner_ramkrishna_BiotechProg}, however the fluxes predicted by HCM-FBA have not yet been validated.
+HCM-EM predicted intracellular fluxes that were similar to MFA results \cite{2008_kim_varner_ramkrishna_BiotechProg}; however, the fluxes predicted by HCM-FBA have not yet been validated.
 Next, the performance of HCM-FBA should be compared to lumped hybrid cybernetic models (L-HCM).
 L-HCMs, which combine elementary modes into mode families based upon metabolic function \cite{2010_song,Song:2011aa},
 have been applied to an \textit{E. coli} network with 67 reactions and a \textit{Saccharomyces cerevisiae} network with 70 reactions;
@@ -265,14 +265,16 @@ The term $u_{l}$ denotes the cybernetic variable controlling the synthesis of en
 The term $\beta_{l}$ denotes the rate constant governing non-specific enzyme degradation, and $r_{G}$ denotes the specific growth rate through all modes.
 The specific uptake/secretion rates and the specific rate of enzyme synthesis were modeled using saturation kinetics.
 The specific growth rate was given by:
-\begin{equation}
+\begin{equation}\nonumber
 	r_{G}  = \sum_{l = 1}^{\mathcal{L}}z_{\mu l}q_{l}\left(\mathbf{e},\mathbf{k},\mathbf{x}\right)
 \end{equation}
 where $z_{\mu l}$ denotes the growth flux $\mu$ through mode $l$.
 The control variables $u_{l}$ and $v_{l}$, which control the synthesis and activity of each enzyme respectively, were given by:
+
 \begin{align*}
 	u_{l}  = \frac{z_{sl}\bar{q}_{l}}{\sum\limits_{l = 1}^{\mathcal{L}}z_{sl}\bar{q}_{l}} && v_{l} = \frac{z_{sl}\bar{q}_{l}}{\max\limits_{l=1,\hdots,\mathcal{L}}z_{sl}\bar{q}_{l}}
 \end{align*}
+
 where $z_{sl}$ denotes the uptake flux of substrate $s$ through mode $l$.
 The model equations were implemented in Julia (v.0.4.2) \cite{Julia} and solved using SUNDIALS \cite{Sundials}.
 The model code for each case study is available at http://www.varnerlab.org.
@@ -287,7 +289,7 @@ The model code for each case study is available at http://www.varnerlab.org.
 Elementary modes were calculated using METATOOL 5.1 \cite{2006_vonKamp_Metatool}.
 FBA modes were defined as the solution flux vector through the network connecting substrate uptake to cellmass and extracellular product formation.
 The FBA problem was formulated as:
-\begin{equation}
+\begin{equation}\nonumber
  \begin{multlined}
 	\qquad \qquad \qquad \max_{\boldsymbol{w}}{} \! \left( w_{obj} = \mathbf{\boldsymbol{\theta}}^T \boldsymbol{w} \right) \\
 	\mathrm{Subject \; to:}
@@ -312,7 +314,7 @@ Model performance, calculated for each of these parameter sets, was then used to
 \subsubsection*{Estimation of model parameters}
 Model parameters were estimated by minimizing the difference between simulations and experimental measurements (squared residual):
 
-\begin{equation}\label{eqn:objective-function}
+\begin{equation}\label{eqn:objective-function}\nonumber
 	\min_{\mathbf{k}} \sum_{\tau=1}^{\mathcal{T}}\sum_{j=1}^{\mathcal{S}}\left(\frac{\hat{x}_{j}\left(\tau\right) - x_{j}\left(\tau,\mathbf{k}\right)}{\omega_{j}\left(\tau\right)}\right)^{2}
 \end{equation}
 where $\hat{x}_{j}\left(\tau\right)$ denotes the measured value of species $j$ at time $\tau$, $x_{j}\left(\tau,\mathbf{k}\right)$ denotes the simulated
