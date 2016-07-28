@@ -40,14 +40,14 @@ Jeffrey D. Varner\IEEEauthorrefmark{1}}\\
 
 \begin{abstract}
 Mathematical models of biochemical networks are useful tools to understand and ultimately predict how cells utilize nutrients to produce valuable products.
-Hybrid cybernetic models in combination with elementary modes (HCM-EM) is a tool to model cellular metabolism.
-However, HCM-EM is limited to reduced metabolic networks because of the computational burden of calculating elementary modes.
+Hybrid cybernetic models in combination with elementary modes (HCM) is a tool to model cellular metabolism.
+However, HCM is limited to reduced metabolic networks because of the computational burden of calculating elementary modes.
 In this study, we developed the hybrid cybernetic modeling with flux balance analysis or HCM-FBA technique which uses flux balance solutions instead of elementary modes
 to dynamically model metabolism.
-We show HCM-FBA has comparable performance to HCM-EM for a proof of concept metabolic network and for a reduced anaerobic \textit{E. coli} network.
-Next, HCM-FBA was applied to a larger metabolic network of aerobic \textit{E. coli} metabolism which was infeasible for HCM-EM (29 FBA modes versus more than 153,000 elementary modes).
+We show HCM-FBA has comparable performance to HCM for a proof of concept metabolic network and for a reduced anaerobic \textit{E. coli} network.
+Next, HCM-FBA was applied to a larger metabolic network of aerobic \textit{E. coli} metabolism which was infeasible for HCM (29 FBA modes versus more than 153,000 elementary modes).
 Global sensitivity analysis further reduced the number of FBA modes required to describe the aerobic \textit{E. coli} data, while maintaining model fit.
-Thus, HCM-FBA is a promising alternative to HCM-EM for large networks where the generation of elementary modes is infeasible.
+Thus, HCM-FBA is a promising alternative to HCM for large networks where the generation of elementary modes is infeasible.
 
 \end{abstract}
 
@@ -81,7 +81,7 @@ Cybernetic models are an alternative to the constraints based approach which hyp
 Cybernetic models have predicted mutant behavior \cite{1999_varner_ramkrishna_MetaEng,Song:2012aa}, steady-state multiplicity \cite{2012_kim_ramkrishna_BiotechProg}, strain specific metabolism \cite{Song:2011aa}, and have been used in bioprocess control applications \cite{Gadkar:2003aa}.
 Hybrid cybernetic models (HCM) have addressed earlier shortcomings of the approach by integrating cybernetic optimality concepts with EMs.
 HCMs dynamically choose combinations of biochemical modes (each catalyzed by a pseudo enzyme whose expression is controlled by an optimal decision) to achieve a physiological objective (Fig. \ref{fig:model-fitting}A).
-HCMs generate intracellular flux distributions consistent with other approaches such as metabolic flux analysis (MFA), and also describe dynamic extracellular measurements \cite{2008_kim_varner_ramkrishna_BiotechProg}.
+HCMs generate intracellular flux distributions consistent with other approaches such as metabolic flux analysis (MFA), and also describe dynamic extracellular measurements superior to dynamic FBA (DFBA) \cite{2008_kim_varner_ramkrishna_BiotechProg}.
 However, HCMs are restricted to networks which can be decomposed into EMs (or EPs).
 
 %small networks due to the exponential increase of the number of elementary modes for large networks.
@@ -93,63 +93,63 @@ However, HCMs are restricted to networks which can be decomposed into EMs (or EP
 In this study, we developed the hybrid cybernetic modeling with flux balance analysis (HCM-FBA) technique.
 HCM-FBA is a modification of the hybrid cybernetic approach of Ramkrishna and coworkers \cite{2008_kim_varner_ramkrishna_BiotechProg} which uses FBA solutions
 (instead of EMs) in conjunction with cybernetic control variables to dynamically simulate metabolism.
-We compared the performance of HCM-FBA to HCM-EM for a prototypical metabolic network along with two \emph{E. coli} networks.
-HCM-FBA performed comparably to HCM-EM for the prototypical network and a reduced anaerobic \textit{E. coli} network, despite having fewer parameters in each case.
-Next, HCM-FBA was applied to an aerobic \textit{E. coli} metabolic network that was infeasible for HCM-EM.
+Since HCM showed superior performance to DFBA we compared the performance of HCM-FBA to HCM for a prototypical metabolic network to show comparable performance along with two \emph{E. coli} networks for real-world applicatons.
+HCM-FBA performed comparably to HCM for the prototypical network and a reduced anaerobic \textit{E. coli} network, despite having fewer parameters in each case.
+Next, HCM-FBA was applied to an aerobic \textit{E. coli} metabolic network that was infeasible for HCM.
 HCM-FBA described cellmass growth and the shift from glucose to acetate consumption with only a few modes.
 Global sensitivity analysis allowed us to further reduce the aerobic \textit{E. coli} HCM-FBA model to the minimal model required to describe the data.
 Thus, HCM-FBA is a promising approach for the development of reduced order dynamic metabolic models
-and a viable alternative to HCM-EM, especially for large networks where the generation of EMs is infeasible.
+and a viable alternative to HCM, especially for large networks where the generation of EMs is infeasible.
 
-%HCM-FBA also captured the dynamics of a larger anaerobic \textit{E. coli} network, that was infeasible for HCM-EM.
-%Taken together, HCM-FBA has comparable model performace to HCM-EM and may be potentially applied to genome-scale networks which was a shortcoming of HCM-EM.
-%HCM-EM and HCM-FBA were then applied to a large metabolic network.
-%The number of elementary modes made it impractical to model with HCM-EM, but HCM-FBA was computationally feasible and performed well with respect to experimental observations.
+%HCM-FBA also captured the dynamics of a larger anaerobic \textit{E. coli} network, that was infeasible for HCM.
+%Taken together, HCM-FBA has comparable model performace to HCM and may be potentially applied to genome-scale networks which was a shortcoming of HCM.
+%HCM and HCM-FBA were then applied to a large metabolic network.
+%The number of elementary modes made it impractical to model with HCM, but HCM-FBA was computationally feasible and performed well with respect to experimental observations.
 
 \begin{figure}[!t]\centering
-\includegraphics[width=0.45\textwidth]{./figs/Fig-1-Method-General.pdf}
+\includegraphics[width=0.43\textwidth]{./figs/Fig-1-Method-General.pdf}
 \caption{HCM proof of concept metabolic study.
-A: HCMs distribute uptake and secretion fluxes amongst different pathways. For HCM-EM, these pathways are elementary modes; for HCM-FBA these are flux balance analysis solutions.
-HCM-EM combines all possible modes within a network; whereas HCM-FBA combines only steady-state paths estimated by flux balance analysis.
+A: HCMs distribute uptake and secretion fluxes amongst different pathways. For HCM, these pathways are elementary modes; for HCM-FBA these are flux balance analysis solutions.
+HCM combines all possible modes within a network; whereas HCM-FBA combines only steady-state paths estimated by flux balance analysis.
 B: Prototypical network with six metabolites and seven reactions.
 Intracellular cellmass precursors $A,B$, and $C$ are balanced (no accumulation) while the extracellular metabolites ($A_{e},B_{e}$, and $C_{e}$) are not balanced (can accumulate).
 The oval denotes the cell boundary, $q_{j}$ is the $j$th flux across the boundary, and $v_{k}$ denotes the $k$th intracellular flux.
-C: Simulation of extracellular metabolite trajectories using HCM-FBA (solid line) versus HCM-EM (points) for the prototypical network.
+C: Simulation of extracellular metabolite trajectories using HCM-FBA (solid line) versus HCM (points) for the prototypical network.
 }\label{fig:model-fitting}
 \end{figure}
 
 \section{Results}
-HCM-FBA was equivalent to HCM-EM for a prototypical metabolic network (Fig. \ref{fig:model-fitting}).
+HCM-FBA was equivalent to HCM for a prototypical metabolic network (Fig. \ref{fig:model-fitting}).
 The proof of concept network, consisting of 6 metabolites and 7 reactions (Fig. \ref{fig:model-fitting}B), generated 3 FBA modes and 6 EMs.
 Using the EMs and synthetic parameters, we generated test data from which we estimated the HCM-FBA model parameters.
 The best fit HCM-FBA model replicated the synthetic data (Fig. \ref {fig:model-fitting}C).
-The HCM-EM and HCM-FBA kinetic parameters were not quantitatively identical, but had similar orders of magnitude;
+The HCM and HCM-FBA kinetic parameters were not quantitatively identical, but had similar orders of magnitude;
 the FBA approach had 3 fewer modes, thus identical parameter values were not expected.
-Taken together, the HCM-FBA approach replicated synthetic data generated by HCM-EM, despite having 3 fewer modes.
+Taken together, the HCM-FBA approach replicated synthetic data generated by HCM, despite having 3 fewer modes.
 Next, we tested the ability of HCM-FBA to replicate experimental data.
 
-%In the case, we demonstrated that HCM-FBA has comparable model performance to a published HCM-EM model \cite{2008_kim_varner_ramkrishna_BiotechProg}.
+%In the case, we demonstrated that HCM-FBA has comparable model performance to a published HCM model \cite{2008_kim_varner_ramkrishna_BiotechProg}.
 %and elementary modes reported
 %The kinetic parameters of HCM-FBA were varied to fit the same experimental observations.
-%HCM-FBA has 17 kinetic parameters while HCM-EM has 21 kinetic parameters and both models resulted in similar fits to the experimental data .
-%HCM-FBA had a better fit on lactate than HCM-EM by 35.6\% on the
-%However, HCM-EM had a lower residual standard error on the overall performance by 4.5\%.
+%HCM-FBA has 17 kinetic parameters while HCM has 21 kinetic parameters and both models resulted in similar fits to the experimental data .
+%HCM-FBA had a better fit on lactate than HCM by 35.6\% on the
+%However, HCM had a lower residual standard error on the overall performance by 4.5\%.
 %However, ZZZ has shown that the EM algorithm has exponential runtime complexity [REFHERE].
-%Thus, HCM-EM may not be possible for large networks, but HCM-FBA will not suffer from this shortcoming.
+%Thus, HCM may not be possible for large networks, but HCM-FBA will not suffer from this shortcoming.
 %In the case, we demonstrated that HCM-FBA is applicable for larger metabolic networks where elementary mode calculations increase exponentially.
 
-The performance of HCM-FBA was equivalent to HCM-EM for anaerobic \textit{E. coli} metabolism (Fig. \ref{fig:ecoli}A).
+The performance of HCM-FBA was equivalent to HCM for anaerobic \textit{E. coli} metabolism (Fig. \ref{fig:ecoli}A).
 We constructed an anaerobic \textit{E. coli} network \cite{2008_kim_varner_ramkrishna_BiotechProg}, consisting of 12 reactions and 19 metabolites, which generated 7 FBA modes and 9 EMs.
-HCM-EM reproduced cellmass, glucose, and byproduct trajectories using the kinetic parameters reported by Kim \textit{et al.} \cite{2008_kim_varner_ramkrishna_BiotechProg} (Fig. \ref{fig:ecoli}A, points versus dashed).
+HCM reproduced cellmass, glucose, and byproduct trajectories using the kinetic parameters reported by Kim \textit{et al.} \cite{2008_kim_varner_ramkrishna_BiotechProg} (Fig. \ref{fig:ecoli}A, points versus dashed).
 HCM-FBA model parameters were estimated in this study from the Kim \textit{et al.} data set using simulated annealing.
-Overall, HCM-FBA performed within 5\% of HCM-EM (on a residual standard error basis) for the anaerobic \textit{E. coli} data (Fig. \ref {fig:ecoli}A, solid),
+Overall, HCM-FBA performed within 5\% of HCM (on a residual standard error basis) for the anaerobic \textit{E. coli} data (Fig. \ref {fig:ecoli}A, solid),
 despite having 2 fewer modes and 4 fewer parameters (17 versus 21 parameters).
-Thus, while both HCM-EM and HCM-FBA described the experimental data, HCM-FBA did so with fewer modes and parameters.
+Thus, while both HCM and HCM-FBA described the experimental data, HCM-FBA did so with fewer modes and parameters.
 
 \begin{figure}[!t]\centering
-\includegraphics[width=0.45\textwidth]{./figs/Fig-2-Ecoli-SimulationResults.pdf}
-\caption{HCM-FBA versus HCM-EM performance for small and large metabolic networks.
-A: Batch anaerobic \textit{E. coli} fermentation data versus HCM-FBA (solid) and HCM-EM (dashed).
+\includegraphics[width=0.43\textwidth]{./figs/Fig-2-Ecoli-SimulationResults.pdf}
+\caption{HCM-FBA versus HCM performance for small and large metabolic networks.
+A: Batch anaerobic \textit{E. coli} fermentation data versus HCM-FBA (solid) and HCM (dashed).
 The experimental data was reproduced from Kim \textit{et al.} \cite{2008_kim_varner_ramkrishna_BiotechProg}. Error bars represent the 90\% confidence interval.
 B: Batch aerobic \textit{E. coli} fermentation data versus HCM-FBA (solid).
 Model performance is also shown when minor modes (dashed) and major modes (dotted) were removed from the HCM-FBA model.
@@ -157,24 +157,24 @@ The experimental data was reproduced from Varma \& Palsson \cite{1994_varma_pals
 \label{fig:ecoli}
 \end{figure}
 
-HCM-FBA captured the shift from glucose to acetate consumption for a model of aerobic \textit{E. coli} metabolism that was infeasible for HCM-EM (Fig. \ref{fig:ecoli}B).
+HCM-FBA captured the shift from glucose to acetate consumption for a model of aerobic \textit{E. coli} metabolism that was infeasible for HCM (Fig. \ref{fig:ecoli}B).
 An \emph{E. coli} metabolic network (60 metabolites and 105 reactions) was constructed from literature \cite{2007_schuetz_etal_MolSysBio,2006_Palsson_model}.
-Elementary mode decomposition of this network (and thus HCM-EM) was not feasible; 153,000 elementary modes were generated before the calculation became infeasible.
+Elementary mode decomposition of this network (and thus HCM) was not feasible; 153,000 elementary modes were generated before the calculation became infeasible.
 Conversely, flux balance analysis generated only 29 modes for the same network.
 HCM-FBA model parameters were estimated from cellmass, glucose, and acetate measurements \cite{1994_varma_palsson_ApplEnvMicro} using simulated annealing (Fig. \ref{fig:ecoli}B, solid).
 HCM-FBA captured glucose consumption, cellmass formation, and the switch to acetate consumption following glucose exhaustion.
-HCM-FBA described the dynamics of a network that was infeasible for HCM-EM, thereby demonstrating the power of the approach for large networks.
+HCM-FBA described the dynamics of a network that was infeasible for HCM, thereby demonstrating the power of the approach for large networks.
 Next, we demonstrated a systematic strategy to identify the critical subset of FBA modes required for model performance.
 
 Global sensitivity analysis identified the FBA modes essential to model performance (Fig. \ref{fig:sensitivity}).
 Total order sensitivity coefficients were calculated for all kinetic parameters and enzyme initial conditions in the aerobic \textit{E. coli} model.
 Five of the 29 FBA modes were significant;
 removal of the most significant of these modes (encoding aerobic growth on glucose) destroyed model performance (Fig. \ref{fig:ecoli}B, dotted).
-Conversely, removing the remaining 24 modes had a negligible effect upon model performance (Fig. \ref{fig:ecoli}B, dashed).
+Conversely, removing the remaining 24 modes simultaneously had a negligible effect upon model performance (Fig. \ref{fig:ecoli}B, dashed).
 The sensitivity analysis identified the minimal model structure required to explain the experimental data.
 
 \begin{figure*}[!t]\centering
-\includegraphics[width=0.80\textwidth]{./figs/Fig-3-Sensitivity-Results.pdf}
+\includegraphics[width=0.68\textwidth]{./figs/Fig-3-Sensitivity-Results.pdf}
 \caption{Global sensitivity analysis of the aerobic \textit{E. coli} model.
 Total order variance based sensitivity coefficients were calculated for the biomass yield on glucose and acetate.
 Sensitivity coefficients were computed for kinetic parameters and enzyme initial conditions (N = 183,000).
@@ -189,20 +189,22 @@ Error bars represent the 95\% confidence intervals of the sensitivity coefficien
 In this study, we developed HCM-FBA, an effective modeling technique to simulate metabolic dynamics.
 HCM-FBA uses flux balance analysis solutions (instead of elementary modes) in conjunction with cybernetic control variables to dynamically simulate metabolism.
 We studied the performance of HCM-FBA on a prototypical metabolic network, along with two \emph{E. coli} networks.
-First, we showed that the performance of HCM-FBA and HCM-EM were comparable for the prototypical network and a small model of anaerobic \textit{E. coli} metabolism.
+First, we showed that the performance of HCM-FBA and HCM were comparable for the prototypical network and a small model of anaerobic \textit{E. coli} metabolism.
 For the anaerobic case, both approaches described the experimental data.
-However, HCM-FBA (which was within 5\% of HCM-EM and slightly better than HCM-EM for lactate secretion) had fewer modes and parameters.
-Next, HCM-FBA was applied to an aerobic \textit{E. coli} metabolic network that was not feasible for HCM-EM.
+However, HCM-FBA (which was within 5\% of HCM and slightly better than HCM for lactate secretion) had fewer modes and parameters.
+Next, HCM-FBA was applied to an aerobic \textit{E. coli} metabolic network that was not feasible for HCM.
 Elementary mode decomposition of the aerobic network generated over 153,000 elementary modes.
 Conversely, the HCM-FBA approach described cellmass growth and the shift from glucose to acetate consumption with only 29 FBA modes.
 Global sensitivity analysis further showed that only 5 of the 29 FBA modes were critical to model performance.
 Removal of these modes crippled the model, but removal of the remaining 24 modes had a negligible impact.
-Thus, HCM-FBA is an alternative approach to HCM-EM, especially for large networks where the generation of elementary modes is infeasible.
+These insiginificant modes are associated with maintenance states, thus they would not impact the model's predictive capability for a growing culture.
+A mode consuming a substrate is determined to be active which can give insight to the operating state of the cell.
+HCM-FBA is an alternative approach to HCM, especially for large networks where the generation of elementary modes is infeasible. Elementary modes show the complexity of a cell, displaying the many routes it can take but mathematically FBA has an objective superiority for large networks.
 
-HCM-FBA is a promising approach to model large metabolic networks where elementary modes calculations are infeasible.
+HCM-FBA is a promising approach to model large metabolic networks where elementary modes calculations are infeasible and kinetic models of such systems have uncertainty in parameter estimations.
 However, there are additional studies that should be performed.
-First, the intracellular flux distribution predicted by HCM-FBA should be compared to HCM-EM and to flux measurements calculated using MFA or FBA in combination with carbon labeling.
-HCM-EM predicted intracellular fluxes that were similar to MFA results \cite{2008_kim_varner_ramkrishna_BiotechProg}; however, the fluxes predicted by HCM-FBA have not yet been validated.
+First, the intracellular flux distribution predicted by HCM-FBA should be compared to HCM and to flux measurements calculated using MFA or FBA in combination with carbon labeling.
+HCM predicted intracellular fluxes that were similar to MFA results \cite{2008_kim_varner_ramkrishna_BiotechProg}; however, the fluxes predicted by HCM-FBA have not yet been validated.
 Next, the performance of HCM-FBA should be compared to lumped hybrid cybernetic models (L-HCM).
 L-HCMs, which combine elementary modes into mode families based upon metabolic function \cite{2010_song,Song:2011aa},
 have been applied to an \textit{E. coli} network with 67 reactions and a \textit{Saccharomyces cerevisiae} network with 70 reactions;
@@ -215,7 +217,7 @@ Thus, HCM-FBA opens up the possibility for dynamic genome scale models of bacter
 %Hybrid cybernetic models are formulated to split the uptake flux among different pathways (defined as modes) to satisfy some chosen metabolic objective (i.e. maximum growth or substrate uptake).
 %The overall flux through each mode is determined by a kinetic uptake rate that acts as a weight for the utilization of that mode.
 %The HCM framework has been shown to predict dynamic external fluxes of cell growth, substrate utilization and byproduct formation.
-%HCM-EM has good model performance for reduced networks, but is often impractical for larger networks.
+%HCM has good model performance for reduced networks, but is often impractical for larger networks.
 %However, Song and Ramkrishna address this shortcoming by lumping .
 %The elementary modes are lumped into groups by weighting schemes typically based on yields and may be further tuned with experimental data.
 %The lumped EMs are considered convex basis vectors in yield space since it spans every physiological yield vector of extracellular metabolites.
@@ -224,17 +226,17 @@ Thus, HCM-FBA opens up the possibility for dynamic genome scale models of bacter
 %The disadvantage of HCM-FBA is it requires \textit{a priori} knowledge of the inputs into FBA.
 %FBA modes do not have the thorough information as elementary modes, but provide sufficient pathways to model experimental observations.
 %, this has not been shown for HCM-FBA.
-%Just as HCM-EM has been applied to \textit{S. cerevisiae}, we can apply the HCM-FBA framework to eukaryotes as long as FBA accounts for compartmentalization.
+%Just as HCM has been applied to \textit{S. cerevisiae}, we can apply the HCM-FBA framework to eukaryotes as long as FBA accounts for compartmentalization.
 %FBA is frequently used to study genome-scale networks\cite{2010_orth_NatBiotech} and can be used to generate modes for the HCM framework.
 %Hybrid cybernetic models are formulated to maximize substrate uptake based on cybernetic arguments.
 %The internal fluxes still follow the pseudo steady state approximation applied in FBA, but HCM uses a combination of pathways.
-%HCM-EM has been shown to have comparable internal flux estimates to MFA results\cite{2008_kim_varner_ramkrishna_BiotechProg}, this has not been shown for HCM-FBA.
+%HCM has been shown to have comparable internal flux estimates to MFA results\cite{2008_kim_varner_ramkrishna_BiotechProg}, this has not been shown for HCM-FBA.
 %The HCM framework has been shown to predict dynamic external fluxes using both elementary and FBA modes.
 %While DFBA already has the capacity to estimate dynamic external fluxes, it requires \textit{a priori} knowledge and boolean rules to capture the diauxic phenomena \cite{1994_varma_palsson_ApplEnvMicro,2002_Mahadevan_BiophysJ,2001_covert_schilling_palsson}.
 %HCM overcomes this by incorparting the regulatory processes of substrate utilization based on its cybernetic arguments.
-%HCM-EM has good model performance for reduced networks, but is impractical for larger networks.
-%HCM-EM has been applied to a network with 67 reactions, requiring the elementary modes to be lumped into groups by complex weighting schemes and relying on experimental data\cite{2010_song_ramkrishna}.
-%A shortcoming of the HCM-EM framework is that EM calculations are computationally expensive and the number of modes exponentially increases for larger networks \cite{2004_lee_varner_ko_ieee}.
+%HCM has good model performance for reduced networks, but is impractical for larger networks.
+%HCM has been applied to a network with 67 reactions, requiring the elementary modes to be lumped into groups by complex weighting schemes and relying on experimental data\cite{2010_song_ramkrishna}.
+%A shortcoming of the HCM framework is that EM calculations are computationally expensive and the number of modes exponentially increases for larger networks \cite{2004_lee_varner_ko_ieee}.
 %In contrast, FBA does not have the computational burden associated with calculating elementary modes.
 %FBA is frequently used to study genome-scale networks\cite{2010_orth_NatBiotech} and can be used to generate modes for the HCM framework.
 %This opens up the possibility of genome scale cybernetic models.
@@ -244,7 +246,7 @@ Thus, HCM-FBA opens up the possibility for dynamic genome scale models of bacter
 %HCM-FBA may also be applied to mammalian networks, as long as FBA accounts for compartmentalization within mammalian systems.
 
 \section{Materials and Methods}
-The HCM-FBA approach is a modification of HCM-EM, where elementary modes are replaced with flux balance analysis solutions.
+The HCM-FBA approach is a modification of HCM, where elementary modes are replaced with flux balance analysis solutions.
 Thus, extracellular variables are dynamic while intracellular metabolites are at a pseudo steady state.
 The abundance of extracellular species $i$ ($x_{i}$), the pseudo enzyme $e_{l}$ (catalyzes flux through mode $l$), and cellmass are governed by:
 \begin{eqnarray}\nonumber
@@ -258,7 +260,7 @@ If $\sigma_{ij}>0$, species $i$ is produced by reaction $j$;
 if $\sigma_{ij}<0$, species $i$ is consumed by reaction $j$; if $\sigma_{ij} = 0$, species $i$ is not connected with reaction $j$.
 Extracellular species balances were subject to the initial conditions $\mathbf{x}\left(t_{o}\right) = \mathbf{x}_{o}$ determined from experimental data.
 The term $q_{l}\left(\mathbf{e},\mathbf{k},\mathbf{x}\right)$ denotes the specific uptake/secretion rate for mode $l$
-where $\mathbf{e}$ denotes the pseudo enzyme vector, $\mathbf{k}$ denotes the unknown kinetic parameter vector, and $\mathbf{x}$ denotes the extracellular species vector;
+where $\mathbf{e}$ denotes the pseudo enzyme vector, $\mathbf{k}$ denotes the unknown kinetic parameter vector, $\mathbf{x}$ denotes the extracellular species vector, and $c$ denotes the cell mass;
 $q_{l}\left(\mathbf{e},\mathbf{k},\mathbf{x}\right)$ is the product of a kinetic term ($\bar{q}_{l}$) and a control variable governing enzyme activity.
 Flux through each mode was catalyzed by a pseudo enzyme $e_{l}$, synthesized at the regulated specific rate $r_{E,l}\left(\mathbf{k},\mathbf{x}\right)$, and constitutively at the rate $\alpha_{l}$.
 The term $u_{l}$ denotes the cybernetic variable controlling the synthesis of enzyme $l$.
