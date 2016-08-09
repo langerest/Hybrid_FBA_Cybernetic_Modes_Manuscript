@@ -1,0 +1,52 @@
+This is BibTeX, Version 0.99d (TeX Live 2015)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: Paper_v2.aux
+The style file: naturemag_noURL.bst
+Database file #1: Paper_v1.bib
+Warning--entry type for "GLPK" isn't style-file defined
+--line 338 of file Paper_v1.bib
+Warning--empty journal in Julia
+Warning--empty journal in SALib
+Warning--empty year in SALib
+You've used 21 entries,
+            2344 wiz_defined-function locations,
+            1136 strings with 13098 characters,
+and the built_in function-call counts, 7923 in all, are:
+= -- 541
+> -- 221
+< -- 0
++ -- 111
+- -- 55
+* -- 1011
+:= -- 879
+add.period$ -- 60
+call.type$ -- 21
+change.case$ -- 20
+chr.to.int$ -- 0
+cite$ -- 24
+duplicate$ -- 704
+empty$ -- 704
+format.name$ -- 73
+if$ -- 1568
+int.to.chr$ -- 0
+int.to.str$ -- 21
+missing$ -- 173
+newline$ -- 110
+num.names$ -- 20
+pop$ -- 131
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 126
+stack$ -- 0
+substring$ -- 334
+swap$ -- 722
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 3
+while$ -- 40
+width$ -- 23
+write$ -- 227
+(There were 4 warnings)

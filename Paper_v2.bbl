@@ -1,0 +1,176 @@
+\begin{thebibliography}{10}
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{\texttt{#1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+\providecommand{\bibinfo}[2]{#2}
+\providecommand{\eprint}[2][]{\url{#2}}
+
+\bibitem{2010_orth_NatBiotech}
+\bibinfo{author}{Orth, J.}, \bibinfo{author}{Thiele, I.} \&
+  \bibinfo{author}{Palsson, B.}
+\newblock \bibinfo{title}{What is flux balance analysis?}
+\newblock \emph{\bibinfo{journal}{Nat. Biotechnol.}}
+  \textbf{\bibinfo{volume}{28}}, \bibinfo{pages}{245--248}
+  (\bibinfo{year}{2010}).
+
+\bibitem{Schuster:2000aa}
+\bibinfo{author}{Schuster, S.}, \bibinfo{author}{Fell, D.~A.} \&
+  \bibinfo{author}{Dandekar, T.}
+\newblock \bibinfo{title}{A general definition of metabolic pathways useful for
+  systematic organization and analysis of complex metabolic networks}.
+\newblock \emph{\bibinfo{journal}{Nat Biotechnol}}
+  \textbf{\bibinfo{volume}{18}}, \bibinfo{pages}{326--32}
+  (\bibinfo{year}{2000}).
+
+\bibitem{Schilling:2000aa}
+\bibinfo{author}{Schilling, C.~H.}, \bibinfo{author}{Letscher, D.} \&
+  \bibinfo{author}{Palsson, B.~O.}
+\newblock \bibinfo{title}{Theory for the systemic definition of metabolic
+  pathways and their use in interpreting metabolic function from a
+  pathway-oriented perspective}.
+\newblock \emph{\bibinfo{journal}{J Theor Biol}}
+  \textbf{\bibinfo{volume}{203}}, \bibinfo{pages}{229--48}
+  (\bibinfo{year}{2000}).
+
+\bibitem{Covert:2004aa}
+\bibinfo{author}{Covert, M.~W.}, \bibinfo{author}{Knight, E.~M.},
+  \bibinfo{author}{Reed, J.~L.}, \bibinfo{author}{Herrgard, M.~J.} \&
+  \bibinfo{author}{Palsson, B.~O.}
+\newblock \bibinfo{title}{Integrating high-throughput and computational data
+  elucidates bacterial networks}.
+\newblock \emph{\bibinfo{journal}{Nature}} \textbf{\bibinfo{volume}{429}},
+  \bibinfo{pages}{92--6} (\bibinfo{year}{2004}).
+
+\bibitem{Wiback:2003aa}
+\bibinfo{author}{Wiback, S.~J.}, \bibinfo{author}{Mahadevan, R.} \&
+  \bibinfo{author}{Palsson, B.~{\O}.}
+\newblock \bibinfo{title}{Reconstructing metabolic flux vectors from extreme
+  pathways: defining the alpha-spectrum}.
+\newblock \emph{\bibinfo{journal}{J Theor Biol}}
+  \textbf{\bibinfo{volume}{224}}, \bibinfo{pages}{313--24}
+  (\bibinfo{year}{2003}).
+
+\bibitem{2004_lee_varner_ko_ieee}
+\bibinfo{author}{Lee, L.}, \bibinfo{author}{Varner, J.} \& \bibinfo{author}{Ko,
+  K.}
+\newblock \bibinfo{title}{Parallel extreme pathway computation for metabolic
+  networks}.
+\newblock \emph{\bibinfo{journal}{Comput Syst Bioinformatics Conf, Int IEEE
+  CS}} \textbf{\bibinfo{volume}{0}}, \bibinfo{pages}{636--639}
+  (\bibinfo{year}{2004}).
+
+\bibitem{1999_varner_ramkrishna_MetaEng}
+\bibinfo{author}{Varner, J.} \& \bibinfo{author}{Ramkrishna, D.}
+\newblock \bibinfo{title}{Metabolic engineering from a cybernetic perspective:
+  aspartate family of amino acids}.
+\newblock \emph{\bibinfo{journal}{Metab Eng}} \textbf{\bibinfo{volume}{1}},
+  \bibinfo{pages}{88--116} (\bibinfo{year}{1999}).
+
+\bibitem{Song:2012aa}
+\bibinfo{author}{Song, H.-S.} \& \bibinfo{author}{Ramkrishna, D.}
+\newblock \bibinfo{title}{Prediction of dynamic behavior of mutant strains from
+  limited wild-type data}.
+\newblock \emph{\bibinfo{journal}{Metab Eng}} \textbf{\bibinfo{volume}{14}},
+  \bibinfo{pages}{69--80} (\bibinfo{year}{2012}).
+
+\bibitem{2012_kim_ramkrishna_BiotechProg}
+\bibinfo{author}{Kim, J.~I.}, \bibinfo{author}{Song, H.-S.},
+  \bibinfo{author}{Sunkara, S.~R.}, \bibinfo{author}{Lali, A.} \&
+  \bibinfo{author}{Ramkrishna, D.}
+\newblock \bibinfo{title}{Exacting predictions by cybernetic model confirmed
+  experimentally: steady state multiplicity in the chemostat}.
+\newblock \emph{\bibinfo{journal}{Biotechnol Prog}}
+  \textbf{\bibinfo{volume}{28}}, \bibinfo{pages}{1160--6}
+  (\bibinfo{year}{2012}).
+
+\bibitem{Song:2011aa}
+\bibinfo{author}{Song, H.-S.} \& \bibinfo{author}{Ramkrishna, D.}
+\newblock \bibinfo{title}{Cybernetic models based on lumped elementary modes
+  accurately predict strain-specific metabolic function}.
+\newblock \emph{\bibinfo{journal}{Biotechnol Bioeng}}
+  \textbf{\bibinfo{volume}{108}}, \bibinfo{pages}{127--40}
+  (\bibinfo{year}{2011}).
+
+\bibitem{Gadkar:2003aa}
+\bibinfo{author}{Gadkar, K.~G.}, \bibinfo{author}{Doyle, F.~J., 3rd},
+  \bibinfo{author}{Crowley, T.~J.} \& \bibinfo{author}{Varner, J.~D.}
+\newblock \bibinfo{title}{Cybernetic model predictive control of a continuous
+  bioreactor with cell recycle}.
+\newblock \emph{\bibinfo{journal}{Biotechnol Prog}}
+  \textbf{\bibinfo{volume}{19}}, \bibinfo{pages}{1487--97}
+  (\bibinfo{year}{2003}).
+
+\bibitem{2008_kim_varner_ramkrishna_BiotechProg}
+\bibinfo{author}{Kim, J.}, \bibinfo{author}{Varner, J.} \&
+  \bibinfo{author}{Ramkrishna, D.}
+\newblock \bibinfo{title}{A hybrid model of anaerobic e. coli gjt001:
+  Combination of elementary flux modes and cybernetic variables}.
+\newblock \emph{\bibinfo{journal}{Biotechnol. Prog.}}
+  \textbf{\bibinfo{volume}{24}}, \bibinfo{pages}{993--1006}
+  (\bibinfo{year}{2008}).
+
+\bibitem{1994_varma_palsson_ApplEnvMicro}
+\bibinfo{author}{Varma, A.} \& \bibinfo{author}{Palsson, B.}
+\newblock \bibinfo{title}{Stoichiometric flux balance models quantitatively
+  predict growth and metabolic by-product secretion in wild-type escherichia
+  coli w3110.}
+\newblock \emph{\bibinfo{journal}{Appl. Environ. Microbiol.}}
+  \textbf{\bibinfo{volume}{60}}, \bibinfo{pages}{3724--3731}
+  (\bibinfo{year}{1994}).
+
+\bibitem{2007_schuetz_etal_MolSysBio}
+\bibinfo{author}{Schuetz, R.}, \bibinfo{author}{Kuepfer, L.} \&
+  \bibinfo{author}{Sauer, U.}
+\newblock \bibinfo{title}{Systematic evaluation of objective functions for
+  predicting intracellular fluxes in escherichia coli}.
+\newblock \emph{\bibinfo{journal}{Mol. Syst. Biol.}}
+  \textbf{\bibinfo{volume}{3}} (\bibinfo{year}{2007}).
+
+\bibitem{2006_Palsson_model}
+\bibinfo{author}{Palsson, B.}
+\newblock \emph{\bibinfo{title}{Systems Biology: Properties of Reconstructed
+  Networks}} (\bibinfo{publisher}{Cambridge University Press},
+  \bibinfo{address}{New York, NY, USA}, \bibinfo{year}{2006}).
+
+\bibitem{2010_song}
+\bibinfo{author}{Song, H.-S.} \& \bibinfo{author}{Ramkrishna, D.}
+\newblock \bibinfo{title}{Prediction of metabolic function from limited data:
+  Lumped hybrid cybernetic modeling (l-hcm)}.
+\newblock \emph{\bibinfo{journal}{Biotechnology and Bioengineering}}
+  \textbf{\bibinfo{volume}{106}}, \bibinfo{pages}{271--284}
+  (\bibinfo{year}{2010}).
+
+\bibitem{Julia}
+\bibinfo{author}{Bezanson, J.}, \bibinfo{author}{Edelman, A.},
+  \bibinfo{author}{Karpinski, S.} \& \bibinfo{author}{Shah, V.~B.}
+\newblock \bibinfo{title}{{J}ulia: A fresh approach to numerical computing}
+  (\bibinfo{year}{2014}).
+\newblock arXiv:\eprint{1411.1607}.
+
+\bibitem{Sundials}
+\bibinfo{author}{Hindmarsh, A.~C.} \emph{et~al.}
+\newblock \bibinfo{title}{Sundials: Suite of nonlinear and
+  differential/algebraic equation solvers}.
+\newblock \emph{\bibinfo{journal}{ACM Trans. Math. Softw.}}
+  \textbf{\bibinfo{volume}{31}}, \bibinfo{pages}{363--396}
+  (\bibinfo{year}{2005}).
+
+\bibitem{2006_vonKamp_Metatool}
+\bibinfo{author}{Kamp, A.} \& \bibinfo{author}{Schuster, S.}
+\newblock \bibinfo{title}{Metatool 5.0: fast and flexible elementary modes
+  analysis}.
+\newblock \emph{\bibinfo{journal}{Bioinformatics}}
+  \textbf{\bibinfo{volume}{22}}, \bibinfo{pages}{1930--1931}
+  (\bibinfo{year}{2006}).
+
+\bibitem{GLPK}
+\bibinfo{title}{{GNU Linear Programming Kit, Version 4.52}}
+  (\bibinfo{year}{2016}).
+\newblock \urlprefix\url{http://www.gnu.org/software/glpk/glpk.html}.
+
+\bibitem{SALib}
+\bibinfo{author}{Herman, J.}
+\newblock \bibinfo{title}{Salib. available online:
+  https://github.com/jdherman/salib} .
+
+\end{thebibliography}
